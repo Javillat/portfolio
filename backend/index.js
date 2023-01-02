@@ -5,5 +5,5 @@ const server = require("./src/app.js"),
 server.listen(puerto, (err) => {
   err
     ? console.log("Error en el puerto ", puerto)
-    : console.log("Escuchando en puerto ", puerto);
+    : console.log("Escuchando en puerto ", "http://localhost:3001");
 });
