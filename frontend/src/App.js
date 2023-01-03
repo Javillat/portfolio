@@ -1,8 +1,10 @@
 
-//import './App.css';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import Whoami from './components/whoami/Whoami';
+import './App.css';
+//https://particles.js.org/
 
 function App() {
   const particlesInit = useCallback(async engine => {
@@ -17,11 +19,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          <h1>Soy portfolio</h1> 
-        </p>
+        <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
+        <Whoami />
       </header>
-      <Particles id="tsparticles" url="" init={particlesInit} loaded={particlesLoaded} />
+          <h1>Soy portfolio</h1> 
     </div>
   );
 }

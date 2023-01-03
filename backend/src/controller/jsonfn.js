@@ -1,4 +1,4 @@
-const particles = require("./particles.json"); 
+const particles = require("./particles2.json"); 
 const getConfig = (req, res) => {
    try {
        res.status(200).json(particles);
