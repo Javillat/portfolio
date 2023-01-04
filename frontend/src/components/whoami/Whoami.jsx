@@ -3,9 +3,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
-import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import "./whoami.css";
 
 export default function Whoami() {
@@ -25,54 +25,60 @@ export default function Whoami() {
           <a
             aria-label="LinkedIn Profile"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/javillatoro-full-stack"
           >
-            <LinkedInIcon color="primary" fontSize="large" />
+            <LinkedInIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="github">
           <a
             aria-label="Github Profile"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.github.com/Javillat"
           >
-            <GitHubIcon color="primary" fontSize="large" />
+            <GitHubIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="whatsapp">
           <a
             aria-label="WhatsApp Link"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://wa.me/+50372146998"
           >
-            <WhatsAppIcon color="primary" fontSize="large" />
+            <WhatsAppIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="telegram">
           <a
             aria-label="Telegram Link"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://t.me/Javillatoro"
           >
-            <TelegramIcon color="primary" fontSize="large" />
+            <TelegramIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="number">
           <a
             aria-label="Contact Number"
             target="_blank"
+            rel="noopener noreferrer"
             href="tel:+50372146998"
           >
-            <ContactPhoneIcon color="primary" fontSize="large" />
+            <ContactPhoneIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="email">
           <a
             aria-label="Email Contact"
             target="_blank"
+            rel="noopener noreferrer"
             href="mailto:fjvillatoroc@gmail.com"
           >
-            <EmailIcon color="primary" fontSize="large" />
+            <EmailIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
       </div>
