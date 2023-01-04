@@ -21,44 +21,60 @@ export default function Whoami() {
         <h2>-[ Full Stack Developer ]-</h2>
       </div>
       <div className="whoami_icons">
-        <a
-          aria-label="LinkedIn Profile"
-          target="_blank"
-          href="https://www.linkedin.com/in/javillatoro-full-stack"
-        >
-          <LinkedInIcon color="primary" fontSize="large" />
-        </a>
-        <a
-          aria-label="Github Profile"
-          target="_blank"
-          href="https://www.github.com/Javillat"
-        >
-          <GitHubIcon color="primary" fontSize="large" />
-        </a>
-        <a
-          aria-label="WhatsApp Link"
-          target="_blank"
-          href="https://wa.me/+50372146998"
-        >
-          <WhatsAppIcon color="primary" fontSize="large" />
-        </a>
-        <a aria-label="Contact Number" target="_blank" href="tel:+50372146998">
-          <ContactPhoneIcon color="primary" fontSize="large" />
-        </a>
-        <a
-          aria-label="Telegram Link"
-          target="_blank"
-          href="https://t.me/Javillatoro"
-        >
-          <TelegramIcon color="primary" fontSize="large" />
-        </a>
-        <a
-          aria-label="Email Contact"
-          target="_blank"
-          href="mailto:fjvillatoroc@gmail.com"
-        >
-          <EmailIcon color="primary" fontSize="large" />
-        </a>
+        <section className="linkedin">
+          <a
+            aria-label="LinkedIn Profile"
+            target="_blank"
+            href="https://www.linkedin.com/in/javillatoro-full-stack"
+          >
+            <LinkedInIcon color="primary" fontSize="large" />
+          </a>
+        </section>
+        <section className="github">
+          <a
+            aria-label="Github Profile"
+            target="_blank"
+            href="https://www.github.com/Javillat"
+          >
+            <GitHubIcon color="primary" fontSize="large" />
+          </a>
+        </section>
+        <section className="whatsapp">
+          <a
+            aria-label="WhatsApp Link"
+            target="_blank"
+            href="https://wa.me/+50372146998"
+          >
+            <WhatsAppIcon color="primary" fontSize="large" />
+          </a>
+        </section>
+        <section className="telegram">
+          <a
+            aria-label="Telegram Link"
+            target="_blank"
+            href="https://t.me/Javillatoro"
+          >
+            <TelegramIcon color="primary" fontSize="large" />
+          </a>
+        </section>
+        <section className="number">
+          <a
+            aria-label="Contact Number"
+            target="_blank"
+            href="tel:+50372146998"
+          >
+            <ContactPhoneIcon color="primary" fontSize="large" />
+          </a>
+        </section>
+        <section className="email">
+          <a
+            aria-label="Email Contact"
+            target="_blank"
+            href="mailto:fjvillatoroc@gmail.com"
+          >
+            <EmailIcon color="primary" fontSize="large" />
+          </a>
+        </section>
       </div>
     </div>
   );
