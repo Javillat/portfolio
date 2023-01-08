@@ -5,10 +5,15 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import TwitterIcon from '@mui/icons-material/Twitter';
 import ContactPageIcon from "@mui/icons-material/ContactPage";
+import { orange } from '@mui/material/colors';
 import "./whoami.css";
 
 export default function Whoami() {
+  const orangecolor = orange[500];
+  console.log(orangecolor);
+
   return (
     <div className="whoami_container">
       <header className="header_whoami">
@@ -28,7 +33,7 @@ export default function Whoami() {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/javillatoro-full-stack"
           >
-            <LinkedInIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            <LinkedInIcon color="warning"  fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="github">
@@ -38,7 +43,7 @@ export default function Whoami() {
             rel="noopener noreferrer"
             href="https://www.github.com/Javillat"
           >
-            <GitHubIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            <GitHubIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="whatsapp">
@@ -48,7 +53,7 @@ export default function Whoami() {
             rel="noopener noreferrer"
             href="https://wa.me/+50372146998"
           >
-            <WhatsAppIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            <WhatsAppIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="telegram">
@@ -58,7 +63,7 @@ export default function Whoami() {
             rel="noopener noreferrer"
             href="https://t.me/Javillatoro"
           >
-            <TelegramIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            <TelegramIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="number">
@@ -68,7 +73,7 @@ export default function Whoami() {
             rel="noopener noreferrer"
             href="tel:+50372146998"
           >
-            <ContactPhoneIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            <ContactPhoneIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
         <section className="email">
@@ -78,7 +83,7 @@ export default function Whoami() {
             rel="noopener noreferrer"
             href="mailto:fjvillatoroc@gmail.com"
           >
-            <EmailIcon color="primary" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            <EmailIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
           </a>
         </section>
       </div>
