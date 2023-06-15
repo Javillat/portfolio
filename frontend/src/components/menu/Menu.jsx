@@ -1,12 +1,18 @@
 import { NavLink } from "react-router-dom";
 import { _LANGUAGES } from "../config/index";
 import { useState } from "react";
-import { ToggleButton } from "@mui/material";
+import Switch from "@mui/material/Switch";
 
+const label = {inputProps: {'ES':'EN'}}
 export default function Menu() {
 
     const { isActive, setActive } = useState(false);
     const [selected, setSelected] = useState(false);
+    const [checked, setChecked] = useState(true);
+
+    const handleChange = (event) => {
+        setChecked(event.target.checked);
+    }
 
     return (
         <nav>
@@ -14,8 +20,14 @@ export default function Menu() {
                 <NavLink className={isActive} to='/'>Home</NavLink>
                 <NavLink className={isActive} to='/About'>About</NavLink>
             </div>
-            <ToggleButton value="check" selected={selected} onChange={() => { setSelected(!selected) }}>
-            </ToggleButton>
+            {
+                 _LANGUAGES.map((lng) => {
+                    return lng.code
+                })
+            }
+            <Switch checked={checked} onChange={handleChange} inputProps={{'aria-label':_LANGUAGES.map((lng) => {
+                    return lng.code
+                })}} size="medium" />
 
             {/* <select defaultValue={'es'}>
 
