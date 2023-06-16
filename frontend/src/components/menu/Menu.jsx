@@ -18,6 +18,7 @@ export default function Menu() {
         <nav>
             <div>
                 <NavLink className={isActive} to='/'>Home</NavLink>
+                <NavLink className={isActive} to='/'>Resume</NavLink>
                 <NavLink className={isActive} to='/About'>About</NavLink>
             </div>
             {
