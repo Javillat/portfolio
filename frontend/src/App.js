@@ -3,10 +3,9 @@ import { useCallback } from "react";
 import { Route, Routes } from "react-router-dom";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import Whoami from './components/whoami/Whoami';
 import About from './components/about/About';
 import './App.css';
-import Menu from "./components/menu/Menu";
+import Main from "./components/main/Main";
 //https://particles.js.org/
 
 function App() {
@@ -24,9 +23,12 @@ function App() {
       <header className="App-header">
         <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
         <Routes>
-          <Route path='/' element={<Whoami />} />
+          <Route path='/' element={<Main />} />
         </Routes>
       </header>
+      <main>
+
+      </main>
       <section id="about">
         {/* <About /> */}
       </section>
