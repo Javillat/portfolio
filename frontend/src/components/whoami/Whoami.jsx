@@ -1,5 +1,4 @@
 import React from "react";
-import Menu from "../menu/Menu";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -18,7 +17,6 @@ export default function Whoami() {
 
   return (
     <>
-      <Menu />
       <div className="whoami_container">
         <header className="header_whoami">
           <p>Who Am I:</p>
