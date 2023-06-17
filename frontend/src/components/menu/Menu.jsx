@@ -4,9 +4,11 @@ import { useState } from "react";
 import Switch from "@mui/material/Switch";
 
 const label = {inputProps: {'ES':'EN'}}
+
+const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
 export default function Menu() {
 
-    const { isActive, setActive } = useState(false);
+    //const { isActive, setActive } = useState(false);
     const [selected, setSelected] = useState(false);
     const [checked, setChecked] = useState(true);
 
@@ -29,14 +31,6 @@ export default function Menu() {
             <Switch checked={checked} onChange={handleChange} inputProps={{'aria-label':_LANGUAGES.map((lng) => {
                     return lng.code
                 })}} size="medium" />
-
-            {/* <select defaultValue={'es'}>
-
-                {_LANGUAGES.map(({ code, label }) => (
-                    <option key={code} value={code}>{label}</option>
-                ))
-                };
-            </select> */}
 
         </nav>
     );
