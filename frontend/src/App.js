@@ -6,6 +6,7 @@ import { loadFull } from "tsparticles";
 import About from './components/about/About';
 import './App.css';
 import Main from "./components/main/Main";
+import Menu from "./components/menu/Menu";
 //https://particles.js.org/
 
 function App() {
@@ -20,19 +21,13 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
       <header className="App-header">
-        <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
-        <Routes>
-          <Route path='/' element={<Main />} />
-        </Routes>
+        <Menu />
       </header>
-      <main>
-
-      </main>
-      <section id="about">
-        {/* <About /> */}
-      </section>
-      <h1>Soy portfolio</h1>
+      <Routes>
+        <Route path='/' element={<Main />} />
+      </Routes>
     </div>
   );
 }
