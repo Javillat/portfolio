@@ -16,6 +16,7 @@ export default function Menu() {
 
     const handleChange = (event) => {
         setChecked(event.target.checked);
+        //setChecked((prev) => !prev);
     }
 
     return (
@@ -34,7 +35,7 @@ export default function Menu() {
             <div id="language">
                 {/* {isChecked ? "ES" : "EN"} */}
                 {/*<button onClick={()=>{setSelected(!selected)}}>{selected?'Hide':'Show'}Menu<*/}
-                <FormControl><FormControlLabel labelPlacement={isChecked ? "end" : "start"} label={isChecked ? "ES" : "EN"} control={<Switch checked={isChecked} onChange={handleChange} inputProps={{
+                <FormControl><FormControlLabel labelPlacement={isChecked ? "end" : "start"} style={{ paddingLeft: '2em' }} label={isChecked ? "ES" : "EN"} control={<Switch checked={isChecked} onChange={handleChange} inputProps={{
                     'aria-label': _LANGUAGES.map((lng) => {
                         return lng.code
                     })
