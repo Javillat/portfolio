@@ -16,3 +16,11 @@ a.active {
     color: orange;
     /* text-decoration: cadetblue; */
 }
+
+#language{
+    display: flex;
+    width: fit-content;
+    height: max-content;
+    margin-right: 5px;
+    color: #fff;
+}

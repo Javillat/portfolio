@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { _LANGUAGES } from "../config/index";
 import { useState } from "react";
 
+import FormControl from "@mui/material/FormControl";
+import { FormControlLabel } from "@mui/material";
 import Switch from "@mui/material/Switch";
 import './menu.css';
 
@@ -10,7 +12,7 @@ const isActive = ({ isActive }) => `${isActive ? 'active' : ''}`;
 export default function Menu() {
 
     //const [selected, setSelected] = useState(false);
-    const [checked, setChecked] = useState(true);
+    const [isChecked, setChecked] = useState(true);
 
     const handleChange = (event) => {
         setChecked(event.target.checked);
@@ -29,15 +31,15 @@ export default function Menu() {
                 <NavLink className={isActive} to='/recommended'>Recommend</NavLink>
                 <NavLink className={isActive} to='/about'>About</NavLink>
             </div>
-            {/* {
-                 _LANGUAGES.map((lng) => {
-                    return lng.code
-                })
-            } */}
-            {/*<button onClick={()=>{setSelected(!selected)}}>{selected?'Hide':'Show'}Menu<*/}
-            <Switch checked={checked} onChange={handleChange} inputProps={{'aria-label':_LANGUAGES.map((lng) => {
-                    return lng.code
-                })}} size="medium" />
+            <div id="language">
+                {/* {isChecked ? "ES" : "EN"} */}
+                {/*<button onClick={()=>{setSelected(!selected)}}>{selected?'Hide':'Show'}Menu<*/}
+                <FormControl><FormControlLabel labelPlacement={isChecked ? "end" : "start"} label={isChecked ? "ES" : "EN"} control={<Switch checked={isChecked} onChange={handleChange} inputProps={{
+                    'aria-label': _LANGUAGES.map((lng) => {
+                        return lng.code
+                    })
+                }} size="medium" />} /></FormControl>
+            </div>
 
         </nav>
     );
