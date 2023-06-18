@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+
+}
+
+nav div a {
+    margin: auto;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.active {
+    color: orange;
+    /* text-decoration: cadetblue; */
+}
