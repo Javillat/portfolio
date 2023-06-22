@@ -4,6 +4,7 @@
     border-style: groove;
     border-width: 3px;
     width: 65vw;
+    max-height: 350px;
     background-color: rgba(245,245,245, 0.6);
     padding: 10px;
 }

@@ -1,6 +1,12 @@
 import Whoami from "../whoami/Whoami";
 import './main.css'
-
+import '../solution/solutions.css'
+import '../projects/projects.css'
+import '../tech/tech.css'
+import '../achievement/achievement.css'
+import '../certificate/certificate.css'
+import '../contact/contact.css'
+import '../recommended/recommended.css'
 export default function Main() {
 
 
@@ -12,13 +18,27 @@ export default function Main() {
             <section className="section-resume-perfil">
                 <Whoami />
             </section>
-            <section className="section-solutions"></section>
-            <section className="section-projects"></section>
-            <section className="ttech"></section>
-            <section className="logros"></section>
-            <section className="certifcate"></section>
-            <section className="contact"></section>
-            <section className="recomended"></section>
+            <section className="section-solutions">
+                <h1>Solutions</h1>
+            </section>
+            <section className="section-projects">
+                <p>Projects</p>
+            </section>
+            <section className="section-tech">
+                <p>Technologies</p>
+            </section>
+            <section className="section-achievement">
+                <h1>Achievements</h1>
+            </section>
+            <section className="section-certificate">
+                <h1>Certificate</h1>
+            </section>
+            <section className="section-contact">
+                <h1>Contact</h1>
+            </section>
+            <section className="section-recommended">
+                <h1>Recommended</h1>
+            </section>
             <div className="div-cv"></div>
             <footer id="copyleft">Footer</footer>
 
