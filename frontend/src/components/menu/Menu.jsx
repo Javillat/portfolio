@@ -26,7 +26,7 @@ export default function Menu() {
 
     return (
         <nav>
-            <div>
+            <div className="menu-div">
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
@@ -49,10 +49,10 @@ export default function Menu() {
                             'aria-label': _LANGUAGES.map((lng) => {
                                 return lng.code
                             })
-                        }} size="medium" />} />
+                        }} size="medium" color="warning" />} />
                 </FormControl>
             </div>
-
+            {/* color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} /> */}
         </nav>
     );
 };
