@@ -5,6 +5,11 @@
   pointer-events: none;
 }
 
+.sticky{
+  background-color: rgba(43, 40, 40, 0.84);
+  border-bottom: 1px solid orange;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -16,6 +21,7 @@
   display: flex;
   position: fixed;
   top: 0;
+  padding-top: 6px;
 }
 
 

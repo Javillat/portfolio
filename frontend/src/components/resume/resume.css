@@ -6,5 +6,34 @@
     width: 65vw;
     max-height: 350px;
     background-color: rgba(245,245,245, 0.6);
-    padding: 10px;
+    padding: 10px 5px;
+}
+
+.resume-title{
+    font-family: 'Rubik 80s Fade';
+    text-decoration-line: underline overline;
+    text-align: start;
+    font-size: 25px;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.resume-perfil{
+    display: flex;
+}
+.article-resumetext{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    width: 70%;
+}
+
+.img-perfil{
+    width: 30%;
+    display: block;
+    position: relative;
+    left: auto;
+    right: auto;
+    border: 1px solid orangered;
+    border-radius: 175px 0 0 175px;
+
 }

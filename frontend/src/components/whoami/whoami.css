@@ -3,6 +3,7 @@
 
 .whoami-superior {
     display: flex;
+    top: 6rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -216,5 +217,4 @@
     padding-bottom: .75rem !important;
     border: none;
     font-size: large;
-    color: #fff;
 }

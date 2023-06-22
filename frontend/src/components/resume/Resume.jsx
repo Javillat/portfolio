@@ -1,19 +1,25 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
+import perfil from "../../img/perfiltemp.jpg";
 import './resume.css';
 
 
-export default function Resume(){
+
+export default function Resume() {
 
     const { t } = useTranslation();
 
-    return(
+    return (
         <div className="resume-div">
-            <h1 className="resume-title">{t('resume')}</h1>
-            <article>
-                <p>{t("resumetext")}</p>
-            </article>
+            <p className="resume-title">{t('resume')}</p>
+            <div className="resume-perfil">
+                <article className="article-resumetext">
+                    <p>{t("resumetext")}</p>
+                </article>
+                <div className="img-perfil">
+                    <img src={perfil} alt="Javier Villatoro" />
+                </div>
+            </div>
         </div>
     );
 }

@@ -19,6 +19,13 @@ function App() {
     await console.log(container);
 
   }, []);
+
+  window.onscroll = () => {
+    const header = document.querySelector(".App-header");
+    const sticky = header.offsetTop;
+    (window.pageYOffset > sticky) ? header.classList.add("sticky") : header.classList.remove("sticky");
+  }
+
   return (
     <div className="App">
       <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
