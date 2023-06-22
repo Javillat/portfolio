@@ -1,0 +1,19 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
+
+import './resume.css';
+
+
+export default function Resume(){
+
+    const { t } = useTranslation();
+
+    return(
+        <div className="resume-div">
+            <h1 className="resume-title">{t('resume')}</h1>
+            <article>
+                <p>{t("resumetext")}</p>
+            </article>
+        </div>
+    );
+}

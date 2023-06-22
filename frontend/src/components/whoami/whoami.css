@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade');
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet');
 
+.whoami-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .whoami_container {
     display: flex;
     flex-direction: column;
@@ -10,7 +17,7 @@
     border-color: rgb(253, 252, 252);
     border-radius: 10px;
     height: 200px;
-    width: 975px;
+    width: 65vw;
     background-color: rgba(245, 245, 245, 0.6);
     padding: 10px;
 }
@@ -130,7 +137,8 @@
 .whatsapp,
 .number,
 .telegram,
-.email {
+.email,
+.twitter {
     display: flex;
     padding: 3px;
     align-items: center;
@@ -143,6 +151,7 @@
     width: 50px;
     height: 50px;
 }
+
 /* :is(.linkedin, .github, .whatsapp, .number, .telegram, .email) :hover{
     border-style: dotted;
 } */
@@ -151,34 +160,61 @@
     background-color: rgba(101, 101, 114, 0.516);
     animation: change 1.25s;
 }
+
 .github:hover {
     border-color: azure;
     background-color: rgba(101, 101, 114, 0.516);
     animation: change 1.25s;
 }
+
 .whatsapp:hover {
     border-color: azure;
     background-color: rgba(101, 101, 114, 0.516);
     animation: change 1.25s;
 }
+
 .number:hover {
     border-color: azure;
     background-color: rgba(101, 101, 114, 0.516);
     animation: change 1.25s;
 }
+
 .telegram:hover {
     border-color: azure;
     background-color: rgba(101, 101, 114, 0.516);
     animation: change 1.25s;
     /* animation-duration: 2s; */
 }
+
 .email:hover {
     border-color: azure;
     background-color: rgba(101, 101, 114, 0.516);
     animation: change 1.25s;
 }
 
+.twitter:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
 @keyframes change {
-    from {background-color: rgb(255, 165, 0);}
-    to {background-color: rgba(101, 101, 114, 0.516);}  
+    from {
+        background-color: rgb(255, 165, 0);
+    }
+
+    to {
+        background-color: rgba(101, 101, 114, 0.516);
+    }
+}
+
+.whoami-resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem !important;
+    padding-bottom: .75rem !important;
+    border: none;
+    font-size: large;
+    color: #fff;
 }

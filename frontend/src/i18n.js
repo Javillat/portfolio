@@ -9,13 +9,14 @@ i18n
     .use(initReactI18next) // passes i18n down to react
     .init({
         lng: 'es',
+        //lng: getCurrentLang(),
         fallbackLng: 'es',
         interpolation: {
             escapeValue: false
         },
         backend: {
             //loadPath: `${getCurrentHost}/i18n/{{lng}}.json`,
-            loadPath: 'http://localhost:5173/i18n/languages/{{lng}}.json'
+            loadPath: 'http://localhost:3001/{{lng}}.json'
         }
         // resources: {
         //     es: require('../src/components/languages/es.json'),
