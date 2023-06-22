@@ -13,6 +13,9 @@
 
 .App-header {
   min-height: 7vh;
+  display: flex;
+  position: fixed;
+  top: 0;
 }
 
 
