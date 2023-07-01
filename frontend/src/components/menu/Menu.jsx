@@ -28,8 +28,8 @@ export default function Menu() {
         <nav>
             <div className="menu-div">
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
-                <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
-                <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
+                <NavLink className={isActive} to='#section-resume-perfil'>{t('resume')}</NavLink>
+                <NavLink className={isActive} to='#section-projects'>{t('projects')}</NavLink>
                 <NavLink className={isActive} to='/tech'>{t('tech')}</NavLink>
                 <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink>
                 <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink>

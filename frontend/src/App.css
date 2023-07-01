@@ -1,11 +1,13 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.sticky{
+.sticky {
   background-color: rgba(43, 40, 40, 0.84);
   border-bottom: 1px solid orange;
 }
@@ -29,6 +31,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

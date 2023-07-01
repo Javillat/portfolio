@@ -34,6 +34,8 @@ function App() {
       </header>
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='resume' element={<Main className="section-resume-perfil" />} />
+        <Route path="projects" element={<Main className="section-projects" />} />
       </Routes>
     </div>
   );
