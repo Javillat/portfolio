@@ -7,6 +7,9 @@ import About from './components/about/About';
 import './App.css';
 import Main from "./components/main/Main";
 import Menu from "./components/menu/Menu";
+import Resume from "./components/resume/Resume";
+import Projects from "./components/projects/Projects";
+import ScrollToTop from "./components/scroll/ScrollToTop.js";
 //https://particles.js.org/
 
 function App() {
@@ -29,13 +32,15 @@ function App() {
   return (
     <div className="App">
       <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
+      <ScrollToTop />
       <header className="App-header">
         <Menu />
       </header>
       <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='resume' element={<Main className="section-resume-perfil" />} />
-        <Route path="projects" element={<Main className="section-projects" />} />
+        <Route path='/' element={<Main />} >{/** Ruta padre */}
+          <Route path='resume' element={<Resume />}/> {/** Ruta hijo */}
+          <Route path="projects" element={<Projects />} />{/** Ruta hijo */}
+        </Route>
       </Routes>
     </div>
   );
