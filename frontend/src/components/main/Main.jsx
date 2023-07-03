@@ -1,4 +1,5 @@
 import Whoami from "../whoami/Whoami";
+import Projects from "../projects/Projects";
 import './main.css'
 import '../solution/solutions.css'
 import '../projects/projects.css'
@@ -7,9 +8,9 @@ import '../achievement/achievement.css'
 import '../certificate/certificate.css'
 import '../contact/contact.css'
 import '../recommended/recommended.css'
+import { Outlet } from "react-router-dom";
+
 export default function Main() {
-
-
 
     return (
         <main className="main">
@@ -20,9 +21,11 @@ export default function Main() {
             </section>
             <section className="section-solutions">
                 <h1>Solutions</h1>
+                <Outlet />
             </section>
             <section className="section-projects">
-                <p>Projects</p>
+                <Projects />
+                {/* <Outlet /> */}
             </section>
             <section className="section-tech">
                 <p>Technologies</p>
