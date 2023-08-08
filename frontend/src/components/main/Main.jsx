@@ -21,7 +21,7 @@ export default function Main() {
             </section>
             <section className="section-solutions">
                 <h1>Solutions</h1>
-                <Outlet />
+                {/* <Outlet /> */}
             </section>
             <section className="section-projects">
                 <Projects />

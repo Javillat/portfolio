@@ -5,10 +5,10 @@ const ScrollToTop = () => {
     const { pathname } = useLocation();
     console.log(pathname);
 
-    let nameclass = '';
+    // let nameclass = '';
     // const element = document.querySelector('.section-projects');
     // console.log(element);
-    let pixel = 0;
+    // let pixel = 0;
     // if (pathname === "/resume") {
     //     nameclass = 'section-resume-perfil';
     //     const rect = element.getBoundingClientRect();
@@ -48,7 +48,7 @@ const ScrollToTop = () => {
        const clase = getnameclass[clave];
        const contenedor = document.querySelector(clase);
        const rect = contenedor.getBoundingClientRect();
-       setPixele(rect.top);
+       setPixele(rect.top + window.scrollY);
     }
  );
     //console.log(location); Puedo cambiar el valor de top con cada locasion 
