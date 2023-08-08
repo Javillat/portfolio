@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
@@ -28,36 +28,42 @@ const ScrollToTop = () => {
     // }
 
     const getnameclass = {
-        "/":"main",
-        "resume":".section-resume-perfil",
-        "solution":".section-solution",
-        "projects":".section-projects",
-        "tech":".section-tech",
-        "achievement":".section-achievement",
-        "certificate":".section-certificate",
-        "contact":".section-contact",
-        "recommended":".section-recommended",
-        about:"section-about"
+        "/": "main",
+        "resume": ".section-resume-perfil",
+        "solution": ".section-solution",
+        "projects": ".section-projects",
+        "tech": ".section-tech",
+        "achievement": ".section-achievement",
+        "certificate": ".section-certificate",
+        "contact": ".section-contact",
+        "recommended": ".section-recommended",
+        about: "section-about"
     };
 
-    const [ pixele, setPixele ] = useState(0)
+    const [pixele, setPixele] = useState(0)
 
     useEffect(() => {
-       //Object.keys(getnameclass).includes(pathname);
-       const clave = (pathname === '/') ? pathname : pathname.slice(1,pathname.length);
-       const clase = getnameclass[clave];
-       const contenedor = document.querySelector(clase);
-       const rect = contenedor.getBoundingClientRect();
-       setPixele(rect.top + window.scrollY);
-    }
- );
-    //console.log(location); Puedo cambiar el valor de top con cada locasion 
-    //Si la locasion es projects top es igual a 500px | sacar el valor del pixel donde esta la clase
-    useEffect(() =>
+        //Object.keys(getnameclass).includes(pathname);
+        const clave = (pathname === '/') ? pathname : pathname.slice(1, pathname.length);
+        const clase = getnameclass[clave];
+        const contenedor = document.querySelector(clase);
+        const rect = contenedor.getBoundingClientRect();
+        console.log(rect);
+        console.log('Y =>', window.scrollY);
+        setPixele(rect.top + window.scrollY);
+        //    setPixele(rect.top);
         window.scrollTo(
             { top: pixele, behavior: 'smooth' }
-        ), [pathname]
+        )
+    }
     );
+    //console.log(location); Puedo cambiar el valor de top con cada locasion 
+    //Si la locasion es projects top es igual a 500px | sacar el valor del pixel donde esta la clase
+    // useEffect(() =>
+    //     window.scrollTo(
+    //         { top: pixele, behavior: 'smooth' }
+    //     ), [pathname]
+    // );
 
 }
 
