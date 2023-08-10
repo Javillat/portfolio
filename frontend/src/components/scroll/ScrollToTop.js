@@ -3,29 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
-    console.log(pathname);
-
-    // let nameclass = '';
-    // const element = document.querySelector('.section-projects');
-    // console.log(element);
-    // let pixel = 0;
-    // if (pathname === "/resume") {
-    //     nameclass = 'section-resume-perfil';
-    //     const rect = element.getBoundingClientRect();
-    //     pixel = rect.top;
-    //     console.log(pixel);
-    // } else if (pathname === '/solution') {
-    //     nameclass = 'section-solution';
-    //     pixel = 1500;
-    // } else if (pathname === '/projects') {
-    //     nameclass = 'section-projects';
-    //     pixel = 2000;
-    // } else if (pathname === '/tech') {
-    //     nameclass = 'section-tech';
-    //     pixel = 2500;
-    // } else if (pathname === '/') {
-    //     pixel = 0;
-    // }
+    //console.log(pathname);
 
     const getnameclass = {
         "/": "main",
@@ -48,8 +26,8 @@ const ScrollToTop = () => {
         const clase = getnameclass[clave];
         const contenedor = document.querySelector(clase);
         const rect = contenedor.getBoundingClientRect();
-        console.log(rect);
-        console.log('Y =>', window.scrollY);
+        //console.log(rect);
+        //console.log('Y =>', window.scrollY);
         setPixele(rect.top + window.scrollY);
         //    setPixele(rect.top);
         window.scrollTo(
