@@ -1,3 +1,7 @@
+.section-resume-perfil {
+    min-width: 100vw;
+    min-height: 100vh;
+}
 .resume-div{
     border: rgb(253, 252, 252);
     border-radius: 10px;

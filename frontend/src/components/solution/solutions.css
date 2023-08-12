@@ -1,7 +1,6 @@
 .section-solutions{
-    margin: 2px;
-    border: 1px solid white;
-    min-width: 98vw;
-    min-height: 768px;
-    color: white;
+    padding: 20px;
+    min-width: 100vw;
+    background-color: rgba(255, 255, 255,0.8);
+    color: rgb(101, 93, 93);
 }

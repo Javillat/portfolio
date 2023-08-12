@@ -1,7 +1,5 @@
 .section-certificate{
-    margin: 2px;
-    border: 1px solid white;
-    min-width: 98vw;
-    min-height: 768px;
+    padding: 20px;
+    min-width: 100vw;
     color: white;
 }

@@ -10,6 +10,7 @@ import Menu from "./components/menu/Menu";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scroll/ScrollToTop.js";
+import Technologies from "./components/tech/Techs";
 //https://particles.js.org/
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path='/' element={<Main />} >{/** Ruta padre */}
           <Route path='resume' element={<Resume />}/> {/** Ruta hijo */}
           <Route path="projects" element={<Projects />} />{/** Ruta hijo */}
+          <Route path="tech" element={<Technologies />} />
         </Route>
       </Routes>
     </div>

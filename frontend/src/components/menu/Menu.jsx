@@ -32,6 +32,7 @@ export default function Menu() {
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
                 <NavLink className={isActive} to='/tech'>{t('tech')}</NavLink>
                 <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink>
+                {/* <NavLink className={isActive} to='/#achievement'>{t('achievement')}</NavLink> */}
                 <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink>
                 <NavLink className={isActive} to='/contact'>{t('contact')}</NavLink>
                 <NavLink className={isActive} to='/recommended'>{t('recommend')}</NavLink>
