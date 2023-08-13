@@ -21,13 +21,11 @@ export default function Main() {
             <section className="section-resume-perfil">
                 <Whoami />
             </section>
-            <section className="section-solutions">
+            {/* <section className="section-solutions">
                 <h1>Solutions</h1>
-                {/* <Outlet /> */}
-            </section>
-            <section className="section-projects">
+            </section>*/}
+            <section className="section-projects"> 
                 <Projects />
-                {/* <Outlet /> */}
             </section>
             <section className="section-tech">
                 <p>Technologies</p>
@@ -43,10 +41,9 @@ export default function Main() {
             <section className="section-contact">
                 <h1>Contact</h1>
             </section>
-            <section className="section-recommended">
+            {/* <section className="section-recommended">
                 <h1>Recommended</h1>
-            </section>
-            <div className="div-cv"></div>
+            </section> */}
             <footer id="copyleft">Footer</footer>
 
         </main>
