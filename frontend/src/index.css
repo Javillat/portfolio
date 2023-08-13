@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden; /**Que no sobresalga nada en el eje x*/
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
