@@ -7,12 +7,10 @@
 
 .project-container {
     display: flex;
+    padding: 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:95vw;
-    height: 95vh;
-    gap: 10px, 15px;
 }
 
 .project-target-container1 {
@@ -34,11 +32,13 @@
 }
 
 .project-target-1 { 
+    position: relative;
     width: 30vw;
     height: 33vh;
     border: 1px solid #fff;
     border-radius: 10px;
-
+    background-color: darkred;
+    animation: rigthease 1s ease;
 }
 
 .project-target-2 {
@@ -62,4 +62,11 @@
     text-align: left;
     align-self: flex-end;
 
+}
+
+@keyframes rigthease {
+    0%{
+        background-color: cadetblue;
+        left: -310px;
+    }
 }
