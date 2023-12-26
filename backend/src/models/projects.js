@@ -14,6 +14,10 @@ module.exports = (sequelize) => {
         description: {
             type: DataTypes.TEXT
         },
+        thumbnail: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         stack: {
             type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false
