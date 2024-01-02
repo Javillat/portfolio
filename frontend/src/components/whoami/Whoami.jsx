@@ -15,7 +15,7 @@ import Resume from "../resume/Resume";
 
 export default function Whoami() {
   const orangecolor = orange[500];
-  console.log(orangecolor);
+  //console.log(orangecolor);
 
   const { t } = useTranslation();
 

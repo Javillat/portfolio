@@ -2,6 +2,7 @@ import Whoami from "../whoami/Whoami";
 import Projects from "../projects/Projects";
 import Technologies from "../tech/Techs";
 import Achievement from "../achievement/Achievement";
+import Contact from "../contact/contact";
 import './main.css'
 import '../solution/solutions.css'
 import '../projects/projects.css'
@@ -39,7 +40,7 @@ export default function Main() {
                 <h1>Certificate</h1>
             </section>
             <section className="section-contact">
-                <h1>Contact</h1>
+                <Contact />
             </section>
             {/* <section className="section-recommended">
                 <h1>Recommended</h1>

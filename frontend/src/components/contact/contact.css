@@ -1,5 +1,37 @@
 .section-contact{
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     min-width: 100vw;
     color: white;
+    background-color: #ffa500;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.answer-container{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.enance-span{
+    font-size: 24px;
+    cursor: pointer;
+}
+.enance-span:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 0.75rem rgb(228, 207, 212));
+
+}
+@media screen and (max-width: 768px){}
