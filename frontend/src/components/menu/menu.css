@@ -14,7 +14,7 @@ nav div a {
 }
 
 a.active {
-    color: orange;
+    color: #ffa500;
     border-bottom: 1px solid #fff;
 
     /* text-decoration: cadetblue; */
