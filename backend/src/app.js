@@ -12,7 +12,7 @@ server.use(bodyParser.json({ limit: "50mb"}));
 server.use(cookieParser());
 server.use(morgan("dev"));
 server.use((request, response, next) => {
-    const allowedOrigins = ["http://localhost:3000"];
+    const allowedOrigins = ["http://localhost:3000","http://localhost:3001","http://localhost:3002"];
     const origin = request.headers.origin;
     if (allowedOrigins.includes(origin)) {
         response.setHeader('Access-Control-Allow-Origin', origin);
