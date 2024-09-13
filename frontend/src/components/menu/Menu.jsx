@@ -26,17 +26,17 @@ export default function Menu() {
 
     return (
         <nav>
-            <div className="menu-div">
+            <div className="menu">
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
                 <NavLink className={isActive} to='/tech'>{t('tech')}</NavLink>
-                <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink>
+                {/* <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/#achievement'>{t('achievement')}</NavLink> */}
-                <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink>
+                {/* <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink> */}
                 <NavLink className={isActive} to='/contact'>{t('contact')}</NavLink>
-                <NavLink className={isActive} to='/recommended'>{t('recommend')}</NavLink>
-                <NavLink className={isActive} to='/about'>{t('about')}</NavLink>
+                {/* <NavLink className={isActive} to='/recommended'>{t('recommend')}</NavLink> */}
+                {/* <NavLink className={isActive} to='/about'>{t('about')}</NavLink> */}
             </div>
             <div id="language">
                 {/* {isChecked ? "ES" : "EN"} */}
@@ -44,7 +44,7 @@ export default function Menu() {
                 <FormControl>
                     <FormControlLabel
                         labelPlacement={isChecked ? "end" : "start"}
-                        style={{ paddingLeft: '2em' }}
+                        // style={{ paddingLeft: '2em' }}
                         label={isChecked ? "ES" : "EN"}
                         control={<Switch checked={isChecked} value={isChecked ? 'en' : 'es'} onChange={onChangeLang} defaultValue={'es'} inputProps={{
                             'aria-label': _LANGUAGES.map((lng) => {

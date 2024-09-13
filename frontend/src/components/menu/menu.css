@@ -3,7 +3,6 @@ nav {
     padding: 10px;
     justify-content: space-between;
     width: 100vw;
-
 }
 
 nav div a {
@@ -20,10 +19,15 @@ a.active {
     /* text-decoration: cadetblue; */
 }
 
-#language{
+
+#language {
     display: flex;
     width: fit-content;
     height: max-content;
     padding-right: 5px;
     color: #fff;
+}
+
+.menu {
+    margin: auto;
 }
