@@ -1,5 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade');
-@import url('https://fonts.googleapis.com/css2?family=Wallpoet');
+
+.imperial-red {
+    color: var(--imperial-red);
+}
+.jade {
+    color: var(--jade);
+}
+.orange-web{
+    color: var(--orange-web);
+}
+.moonstone{
+    color: var(--moonstone);
+}
+.pearl{
+    color: var(--pearl);
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    margin: 10px;
+    border-bottom: 1px solid var(--jade);
+    border-right: 1px solid var(--imperial-red);
+    /* border-radius: 5px; */
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 5px;
+    margin-right: 22px;
+    padding: 5px;
+    transform: rotate3d(0, 0, 1, 36deg);
+    /* filter:drop-shadow(2px 1px #aaa) */
+    /* mask-image: linear-gradient(Black 80%, transparent); */
+}
+
 
 .whoami-superior {
     display: flex;
@@ -13,13 +44,15 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    border-style: groove;
-    border-width: 3px;
-    border-color: rgb(253, 252, 252);
+    border-top: 3px groove var(--jade);
+    border-right: 3px groove var(--moonstone);
+    border-left: 3px groove var(--orange-web);
+    border-bottom: 3px groove var(--imperial-red);
+
     border-radius: 10px;
-    height: 200px;
-    width: 65vw;
-    background-color: rgba(245, 245, 245, 0.6);
+    min-height: 85vh;
+    width: 83vw;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 10px;
 }
 
@@ -32,22 +65,26 @@
 }
 
 .whoami_container .typewriter h1 {
+    /* flex-wrap: wrap; */
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 125px;
     font-family: 'Wallpoet';
     font-size: 60px;
     font-weight: lighter;
-    color: ghostwhite;
+    color: var(--moonstone);
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
+    border-right: .13em solid orange;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .03em;
+    letter-spacing: .10em;
     /* Adjust as needed */
     animation:
-        typing 3.5s steps(30, end),
+        typing 3.5s steps(28, end),
         blink-caret .5s step-end infinite;
 }
 
@@ -78,9 +115,10 @@
 .fullstack {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
-.fullstack h2 {
+.whoami_container .fullstack h2 {
     font-family: 'Wallpoet';
     font-size: 25px;
     color: azure;
@@ -98,7 +136,7 @@
     letter-spacing: .03em;
     /* Adjust as needed */
     animation:
-        2.5s typing-fullstack 3.5s steps(27, end),
+        3.5s typing-fullstack 4.7s steps(27, end),
         blink-caret-full .5s step-end infinite;
 }
 
@@ -127,8 +165,8 @@
 .whoami_icons {
     display: flex;
     justify-content: space-between;
-    width: 370px;
-    max-width: 375px;
+    /* width: 370px; */
+    min-width: 15vw;
     margin: 8px;
     align-self: center;
 }
@@ -145,9 +183,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border-color: orange;
+    border-color: var(--jade);
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     background-color: rgba(245, 245, 245, 0.6);
     min-width: 2.5vw;
     min-height: 5vh;
@@ -209,6 +247,7 @@
     }
 }
 
+
 .whoami-resume {
     display: flex;
     align-items: center;
@@ -217,4 +256,62 @@
     padding-bottom: .75rem !important;
     border: none;
     font-size: large;
+}
+
+.profile-main-picture {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 55vh;
+}
+
+.profile-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-family: 'Wallpoet'; 
+    font-size: 19px; 
+    font-weight: lighter;
+    padding-top: 20px;
+    margin: 60px;
+    letter-spacing: 0.04rem;
+    /* padding-left: 125px; */
+}
+
+@keyframes profile-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
+
+.profile-picture {
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0; */
+    display: contents;
+    overflow: hidden;
+    animation:
+        3.5s image-appear 6.7s steps(27, end);
+    transition: .5s ease-in;
+}
+
+
+
+@keyframes image-appear {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+
+    to {
+        opacity: 1;
+        height: 100%;
+    }
 }

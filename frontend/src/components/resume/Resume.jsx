@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import perfil from "../../img/perfiltemp.jpg";
 import './resume.css';
 
 
@@ -16,9 +15,9 @@ export default function Resume() {
                 <article className="article-resumetext">
                     <p>{t("resumetext")}</p>
                 </article>
-                <div className="img-perfil">
+                {/* <div className="img-perfil">
                     <img src={perfil} alt="Javier Villatoro" />
-                </div>
+                </div> */}
             </div>
         </div>
     );

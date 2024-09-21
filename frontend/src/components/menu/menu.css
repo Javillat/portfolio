@@ -8,13 +8,16 @@ nav {
 nav div a {
     margin: auto;
     padding: 5px;
+    font-family: 'Wallpoet';
     color: #fff;
     text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
 }
 
 a.active {
     color: #ffa500;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid var(--imperial-red);
 
     /* text-decoration: cadetblue; */
 }

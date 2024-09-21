@@ -3,15 +3,21 @@ import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import XIcon from '@mui/icons-material/X';
 import TelegramIcon from "@mui/icons-material/Telegram";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
-import TwitterIcon from '@mui/icons-material/Twitter';
+
+// import TwitterIcon from '@mui/icons-material/Twitter';
+
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import { orange } from '@mui/material/colors';
-import "./whoami.css";
 import { useTranslation } from "react-i18next";
+import profilePicture from "../../assets/img/selfprofile.png";
+import portfolioProfile from "../../assets/img/portfolio_profile.PNG";
 import Resume from "../resume/Resume";
+
+import "./whoami.css";
 
 export default function Whoami() {
   const orangecolor = orange[500];
@@ -26,10 +32,19 @@ export default function Whoami() {
           <p>{t('whoami')}:</p>
         </header>
         <div className="typewriter">
-          <h1>Francisco Javier Villatoro</h1>
+          <h1><span className="imperial-red">{"{"}</span><span className="jade">Javier</span> Villatoro<span className="imperial-red">{"}"}</span></h1>
         </div>
         <div className="fullstack">
-          <h2>-[ Full Stack Developer ]-</h2>
+          <h2>-<span className="imperial-red">[</span><span className="orange-web">Full Stack Developer</span><span className="imperial-red">]</span>-</h2>
+        </div>
+        <div className="profile-main-picture">
+          <div className="profile-resume p-4">
+            <p className="moonstone">{"["}{t('resumetextfirst')}</p>
+            <p className="jade">{t('resumetextsecond')}{"]"}</p>
+          </div>
+          <div className="profile-picture">
+            <img src={profilePicture} alt="" />
+          </div>
         </div>
         <div className="whoami_icons">
           <section className="linkedin">
@@ -62,7 +77,17 @@ export default function Whoami() {
               <WhatsAppIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
             </a>
           </section>
-          <section className="telegram">
+          <section className="twitter">
+            <a
+              aria-label="Twitter Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.x.com/Javillatoro_"
+            >
+              <XIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+            </a>
+          </section>
+          {/* <section className="telegram">
             <a
               aria-label="Telegram Link"
               target="_blank"
@@ -91,17 +116,7 @@ export default function Whoami() {
             >
               <EmailIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
             </a>
-          </section>
-          <section className="twitter">
-            <a
-              aria-label="Twitter Profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.twitter.com/Javillatoro_"
-            >
-              <TwitterIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
-            </a>
-          </section>
+          </section> */}
         </div>
       </div>
       <div className="whoami-resume">

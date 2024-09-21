@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import About from './components/about/About';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Main from "./components/main/Main";
 import Menu from "./components/menu/Menu";

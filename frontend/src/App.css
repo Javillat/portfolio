@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade');
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+  /* CSS HEX */
+  --jade: #44af69ff;
+  --imperial-red: #f8333cff;
+  --orange-web: #fcab10ff;
+  --moonstone: #2b9eb3ff;
+  --pearl: #dbd5b5ff;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
