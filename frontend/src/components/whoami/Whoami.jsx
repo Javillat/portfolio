@@ -32,15 +32,23 @@ export default function Whoami() {
           <p>{t('whoami')}:</p>
         </header>
         <div className="typewriter">
-          <h1><span className="imperial-red">{"{"}</span><span className="jade">Javier</span> Villatoro<span className="imperial-red">{"}"}</span></h1>
+          <h1><span className="imperial-red">{"{"}</span>Javier Villatoro<span className="imperial-red">{"}"}</span></h1>
         </div>
         <div className="fullstack">
-          <h2>-<span className="imperial-red">[</span><span className="orange-web">Full Stack Developer</span><span className="imperial-red">]</span>-</h2>
+          <h2>-<span className="imperial-red">[</span><span className="orange-web">Full-Stack Developer</span><span className="imperial-red">]</span>-</h2>
         </div>
         <div className="profile-main-picture">
           <div className="profile-resume p-4">
-            <p className="moonstone">{"["}{t('resumetextfirst')}</p>
-            <p className="jade">{t('resumetextsecond')}{"]"}</p>
+            <div className="resume-slighly">
+              <div className="moonstone">
+                {t('resumeslighlyfirst')}
+              </div>
+              <div className="moonstone">
+                {t('resumeslighlylast')}
+              </div>
+            </div>
+            {/* <p className="moonstone"></p> */}
+            {/* <p></p> */}
           </div>
           <div className="profile-picture">
             <img src={profilePicture} alt="" />

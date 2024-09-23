@@ -1,18 +1,25 @@
-
 .imperial-red {
     color: var(--imperial-red);
 }
+
 .jade {
     color: var(--jade);
 }
-.orange-web{
+
+.orange-web {
     color: var(--orange-web);
 }
-.moonstone{
+
+.moonstone {
     color: var(--moonstone);
 }
-.pearl{
+
+.pearl {
     color: var(--pearl);
+}
+
+.white {
+    color: var(--white);
 }
 
 img {
@@ -44,16 +51,19 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    border-top: 3px groove var(--jade);
+    /* border-top: 3px groove var(--jade);
     border-right: 3px groove var(--moonstone);
     border-left: 3px groove var(--orange-web);
-    border-bottom: 3px groove var(--imperial-red);
+    border-bottom: 3px groove var(--imperial-red); */
 
-    border-radius: 10px;
+    border-radius: 25px;
     min-height: 85vh;
     width: 83vw;
-    background-color: rgba(255, 255, 255, 0.95);
+    /* background-color: rgba(255, 255, 255, 0.95); */
     padding: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
 }
 
 .header_whoami p {
@@ -183,10 +193,10 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border-color: var(--jade);
+    /* border-color: var(--white); */
     border-style: solid;
     border-width: 2px;
-    background-color: rgba(245, 245, 245, 0.6);
+    /* background-color: rgba(245, 245, 245, 0.6); */
     min-width: 2.5vw;
     min-height: 5vh;
 }
@@ -267,16 +277,32 @@ img {
 
 .profile-resume {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    align-items: end;
     text-align: left;
-    font-family: 'Wallpoet'; 
-    font-size: 19px; 
-    font-weight: lighter;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-weight: 900;
     padding-top: 20px;
-    margin: 60px;
+    margin: -15px;
     letter-spacing: 0.04rem;
     /* padding-left: 125px; */
+}
+
+.resume-slighly {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    /* flex-direction: column; */
+    padding-left: 100px;
+}
+
+.slighly-left {
+    padding-right: 10px;
+}
+
+.slighly-right {
+    padding-left: 10px;
 }
 
 @keyframes profile-text {
