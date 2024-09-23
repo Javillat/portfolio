@@ -10,15 +10,10 @@ export default function Resume() {
 
     return (
         <div className="resume-div">
-            <p className="resume-title">{t('resume')}</p>
-            <div className="resume-perfil">
-                <article className="article-resumetext">
-                    <p>{t("resumetext")}</p>
-                </article>
-                {/* <div className="img-perfil">
-                    <img src={perfil} alt="Javier Villatoro" />
-                </div> */}
-            </div>
+            {/* <p className="resume-title">{t('resume')}</p> */}
+            {/* <div className="resume-perfil justify-content-center">
+                
+            </div> */}
         </div>
     );
 }
