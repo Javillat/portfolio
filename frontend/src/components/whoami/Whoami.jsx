@@ -28,9 +28,9 @@ export default function Whoami() {
   return (
     <div className="whoami-superior">
       <div className="whoami_container">
-        <header className="header_whoami">
+        {/* <header className="header_whoami">
           <p>{t('whoami')}:</p>
-        </header>
+        </header> */}
         <div className="typewriter">
           <h1><span className="imperial-red">{"{"}</span>Javier Villatoro<span className="imperial-red">{"}"}</span></h1>
         </div>
@@ -40,10 +40,10 @@ export default function Whoami() {
         <div className="profile-main-picture">
           <div className="profile-resume p-4">
             <div className="resume-slighly">
-              <div className="moonstone">
+              <div className="moonstone slighly-left">
                 {t('resumeslighlyfirst')}
               </div>
-              <div className="moonstone">
+              <div className="moonstone slighly-right">
                 {t('resumeslighlylast')}
               </div>
             </div>
@@ -51,7 +51,7 @@ export default function Whoami() {
             {/* <p></p> */}
           </div>
           <div className="profile-picture">
-            <img src={profilePicture} alt="" />
+            <img src={profilePicture} alt="javier-pic" />
           </div>
         </div>
         <div className="whoami_icons">
