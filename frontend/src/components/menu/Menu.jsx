@@ -26,15 +26,18 @@ export default function Menu() {
 
     return (
         <nav>
+            <div className="nav__mark">
+                Javillat
+            </div>
             <div className="menu">
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
                 <NavLink className={isActive} to='/tech'>{t('tech')}</NavLink>
+                <NavLink className={isActive} to='/contact'>{t('contact')}</NavLink>
                 {/* <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/#achievement'>{t('achievement')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink> */}
-                <NavLink className={isActive} to='/contact'>{t('contact')}</NavLink>
                 {/* <NavLink className={isActive} to='/recommended'>{t('recommend')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/about'>{t('about')}</NavLink> */}
             </div>
