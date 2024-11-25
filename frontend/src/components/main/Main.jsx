@@ -3,6 +3,8 @@ import Projects from "../projects/Projects";
 import Technologies from "../tech/Techs";
 import Achievement from "../achievement/Achievement";
 import Contact from "../contact/contact";
+import SocialNetworkContact from "../socialnetworkcontact/SocialNetworkContact";
+import NavigationButton from "../nav/Navigation";
 import './main.css'
 import '../solution/solutions.css'
 import '../projects/projects.css'
@@ -17,15 +19,19 @@ export default function Main() {
 
     return (
         <main className="main">
-            <aside id="contact-float-left"></aside>
-            <article id="social-networs-right"></article>
+            <aside>
+                <NavigationButton />
+            </aside>
+            <aside>
+                <SocialNetworkContact />
+            </aside>
             <section className="section-resume-perfil">
                 <Whoami />
             </section>
             {/* <section className="section-solutions">
                 <h1>Solutions</h1>
             </section>*/}
-            <section className="section-projects"> 
+            <section className="section-projects">
                 <Projects />
             </section>
             <section className="section-tech">

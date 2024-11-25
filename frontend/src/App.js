@@ -2,6 +2,7 @@
 import { useCallback } from "react";
 import { Route, Routes } from "react-router-dom";
 import Particles from "react-particles";
+// import { SiJamboard } from "react-icons/si";
 import { loadFull } from "tsparticles";
 import About from './components/about/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
