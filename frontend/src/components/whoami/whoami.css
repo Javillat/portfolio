@@ -57,13 +57,13 @@ img {
     border-bottom: 3px groove var(--imperial-red); */
 
     border-radius: 25px;
-    min-height: 85vh;
+    min-height: 90vh;
     width: 83vw;
     /* background-color: rgba(255, 255, 255, 0.95); */
     padding: 10px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    /* border: 1.5px solid rgba(209, 213, 219, 0.3); */
 }
 
 .header_whoami p {
@@ -74,15 +74,18 @@ img {
     margin-top: 5px;
 }
 
+.typewriter {
+    max-width: fit-content;
+}
 .whoami_container .typewriter h1 {
-    /* flex-wrap: wrap; */
+    width: fit-content;
     text-align: left;
-    padding-top: 20px;
-    padding-left: 125px;
-    font-family: 'Wallpoet';
-    font-size: 60px;
-    font-weight: lighter;
-    color: var(--moonstone);
+    /* padding-top: 20px; */
+    padding-left: 100px;
+    font-family: 'Montserrat, sans-serif';
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--orange-web);
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .13em solid orange;
@@ -91,7 +94,7 @@ img {
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em;
+    letter-spacing: -.01em;
     /* Adjust as needed */
     animation:
         typing 3.5s steps(28, end),
@@ -126,12 +129,14 @@ img {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    margin-right: 200px;
 }
 
 .whoami_container .fullstack h2 {
-    font-family: 'Wallpoet';
-    font-size: 25px;
-    color: azure;
+    font-family: 'Montserrat, sans-serif';
+    font-size: 72px;
+    font-weight: 800;
+    color: #FFF;
     margin-top: 3px;
     text-align: center;
     max-width: fit-content;
@@ -143,7 +148,7 @@ img {
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .03em;
+    letter-spacing: -.03em;
     /* Adjust as needed */
     animation:
         3.5s typing-fullstack 4.7s steps(27, end),
@@ -172,99 +177,13 @@ img {
     }
 }
 
-.whoami_icons {
-    display: flex;
-    justify-content: space-between;
-    /* width: 370px; */
-    min-width: 15vw;
-    margin: 8px;
-    align-self: center;
-}
-
-.linkedin,
-.github,
-.whatsapp,
-.number,
-.telegram,
-.email,
-.twitter {
-    display: flex;
-    padding: 3px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    /* border-color: var(--white); */
-    border-style: solid;
-    border-width: 2px;
-    /* background-color: rgba(245, 245, 245, 0.6); */
-    min-width: 2.5vw;
-    min-height: 5vh;
-}
-
-/* :is(.linkedin, .github, .whatsapp, .number, .telegram, .email) :hover{
-    border-style: dotted;
-} */
-.linkedin:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-}
-
-.github:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-}
-
-.whatsapp:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-}
-
-.number:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-}
-
-.telegram:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-    /* animation-duration: 2s; */
-}
-
-.email:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-}
-
-.twitter:hover {
-    border-color: azure;
-    background-color: rgba(101, 101, 114, 0.516);
-    animation: change 1.25s;
-}
-
-@keyframes change {
-    from {
-        background-color: rgb(255, 165, 0);
-    }
-
-    to {
-        background-color: rgba(101, 101, 114, 0.516);
-    }
-}
-
-
 .whoami-resume {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1rem !important;
-    padding-bottom: .75rem !important;
-    border: none;
+    /* padding-bottom: .75rem !important; */
+    /* border: none; */
     font-size: large;
 }
 
@@ -280,9 +199,9 @@ img {
     /* flex-direction: column; */
     align-items: end;
     text-align: left;
-    font-family: 'Roboto Condensed';
-    font-size: 16px;
-    font-weight: 900;
+    font-family: 'Montserrat, sans-serif';
+    font-size: 20px;
+    font-weight: 700;
     padding-top: 20px;
     margin: -15px;
     letter-spacing: 0.04rem;
@@ -298,7 +217,7 @@ img {
 }
 
 .slighly-left {
-    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .slighly-right {
