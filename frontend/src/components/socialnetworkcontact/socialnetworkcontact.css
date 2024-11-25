@@ -1,0 +1,90 @@
+
+.whoami_icons {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 315px;
+    left: -60px;
+    min-width: 15vw;
+    margin: 8px;
+    align-self: center;
+    transform: rotate(90deg);
+    z-index: 100;
+}
+
+.linkedin,
+.github,
+.whatsapp,
+.number,
+.telegram,
+.email,
+.twitter {
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border-color: var(--white); */
+    border-style: solid;
+    border-width: 2px;
+    /* background-color: rgba(245, 245, 245, 0.6); */
+    min-width: 2.5vw;
+    min-height: 5vh;
+    transform: rotate(-90deg);
+}
+
+/* :is(.linkedin, .github, .whatsapp, .number, .telegram, .email) :hover{
+    border-style: dotted;
+} */
+.linkedin:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
+.github:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
+.whatsapp:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
+.number:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
+.telegram:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+    /* animation-duration: 2s; */
+}
+
+.email:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
+.twitter:hover {
+    border-color: azure;
+    background-color: rgba(101, 101, 114, 0.516);
+    animation: change 1.25s;
+}
+
+@keyframes change {
+    from {
+        background-color: rgb(255, 165, 0);
+    }
+
+    to {
+        background-color: rgba(101, 101, 114, 0.516);
+    }
+}

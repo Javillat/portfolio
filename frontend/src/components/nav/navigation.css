@@ -1,0 +1,31 @@
+.navigation {
+    -webkit-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    position: fixed;
+    top: 315px;
+    right: 15px;
+    width: 16px;
+    transform: rotate(90deg);
+    z-index: 100;
+}
+
+.navigation a span {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    display: block;
+    justify-content: space-between;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+}
