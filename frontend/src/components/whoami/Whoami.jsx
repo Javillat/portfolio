@@ -6,7 +6,7 @@ import React from "react";
 
 import { useTranslation } from "react-i18next";
 import profilePicture from "../../assets/img/selfprofile.png";
-import portfolioProfile from "../../assets/img/portfolio_profile.PNG";
+import { BsDashLg } from "react-icons/bs";
 import Resume from "../resume/Resume";
 
 import "./whoami.css";
@@ -23,9 +23,7 @@ export default function Whoami() {
         {/* <header className="header_whoami">
           <p>{t('whoami')}:</p>
         </header> */}
-        <div className="typewriter">
-          <h1><span className="imperial-red">{"{"}</span>Javier Villatoro<span className="imperial-red">{"}"}</span></h1>
-        </div>
+        
         <div className="fullstack">
           <h2><span className="imperial-red">[</span><span>FullStack Developer</span><span className="imperial-red">]</span></h2>
         </div>
@@ -47,6 +45,9 @@ export default function Whoami() {
           <div className="profile-picture">
             <img src={profilePicture} alt="javier-pic" />
           </div>
+        </div>
+        <div className="typewriter">
+          <h1><span className="imperial-red">{<BsDashLg />}</span>Javier Villatoro<span className="imperial-red">{<BsDashLg />}</span></h1>
         </div>
       </div>
       <div className="whoami-resume">
