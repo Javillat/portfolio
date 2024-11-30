@@ -24,8 +24,13 @@ section {
 }
 
 .sticky {
-  background-color: rgba(43, 40, 40, 0.84);
+  /* background-color: rgba(43, 40, 40, 0.84); */
+  background: rgba(255, 255, 255, 0.19);
   border-bottom: 1px solid orange;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px); 
+  /*
+    border-radius: 16px;*/
 }
 
 @media (prefers-reduced-motion: no-preference) {
