@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
       <ScrollToTop />
       <header className="App-header">

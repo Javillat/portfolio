@@ -4,7 +4,6 @@
 
 
 :root {
-  /* CSS HEX */
   --primay-black: #0A0A0A;
   --secundary-mint-neon: #4ECCA3;
   --moonstone: #2b9eb3ff;
@@ -26,16 +25,30 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 section {
   max-height: 92vh;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--base-font);
+  color: var(--primary-text-dark-gray);
+  background-color: var(--primay-black);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .sticky {
   /* background-color: rgba(43, 40, 40, 0.84); */
   background: rgba(255, 255, 255, 0.19);
-  border-bottom: 1px solid var(--secundary-mint-neon);
+  border: 1px solid var(--secundary-mint-neon);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.4px); 
   /*
@@ -43,12 +56,16 @@ section {
 }
 
 .App-header {
+  max-width: 65%;
   min-height: 7vh;
   display: flex;
   position: fixed;
-  top: 0;
-  padding-top: 6px;
+  top: 10px;
+  padding-top: 3px;
   z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
 }
 
 /* Works on Firefox */
