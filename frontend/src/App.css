@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=The+Nautigal:wght@400;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400;500;700&family=The+Nautigal:wght@400;700&display=swap');
 
 
 :root {
   /* CSS HEX */
-  --jade: #44af69ff;
-  --imperial-red: #f8333cff;
-  --orange-web: #fcab10ff;
+  --primay-black: #0A0A0A;
+  --secundary-mint-neon: #4ECCA3;
   --moonstone: #2b9eb3ff;
+  --imperial-red: #f8333cff;
+  --primary-text-dark-gray: #EEE;
+  --secundary-text-white: #fff;
+  --electric-blue: #66B2FF;
+  --jade: #44af69ff;
+  --orange-web: #fcab10ff;
   --pearl: #dbd5b5ff;
-  --white: #fff;
+  --dark-blue: #0f4c75;
+  --base-font: 'Roboto Condensed', sans-serif;
+  --title-font: 'The Nautigal', cursive;
+  --text-font: 'Montserrat', sans-serif;
+  --button-font: 'Orbitron', sans-serif;
 }
 
 
@@ -33,12 +40,6 @@ section {
     border-radius: 16px;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   min-height: 7vh;
   display: flex;
@@ -46,17 +47,6 @@ section {
   top: 0;
   padding-top: 6px;
   z-index: 1;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* Works on Firefox */

@@ -10,10 +10,11 @@ export default function Resume() {
 
     return (
         <div className="resume-div">
-            {/* <p className="resume-title">{t('resume')}</p> */}
-            {/* <div className="resume-perfil justify-content-center">
+            # Mi perfil desarrollador
+
+Soy un desarrollador full-stack impulsado por una pasión inquebrantable por la innovación. Mi hogar, es el dinámico universo del desarrollo web, transformo desafíos en oportunidades y código en experiencias cautivadoras. Constantemente en evolución y siempre listo para abrazar el próximo gran reto tecnológico que expanda mis horizontes.
+            
                 
-            </div> */}
         </div>
     );
 }

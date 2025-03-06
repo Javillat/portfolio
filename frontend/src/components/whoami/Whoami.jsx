@@ -1,8 +1,7 @@
 import React from "react";
 
 // import TwitterIcon from '@mui/icons-material/Twitter';
-
-
+import Brand from '../../assets/brand/Brand';
 
 import { useTranslation } from "react-i18next";
 import profilePicture from "../../assets/img/selfprofile.png";
@@ -48,6 +47,9 @@ export default function Whoami() {
         </div>
         <div className="typewriter">
           <h1><span className="imperial-red">{<BsDashLg />}</span>Javier Villatoro<span className="imperial-red">{<BsDashLg />}</span></h1>
+        </div>
+        <div>
+          <Brand />
         </div>
       </div>
       <div className="whoami-resume">

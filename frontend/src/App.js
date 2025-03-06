@@ -17,7 +17,7 @@ import Technologies from "./components/tech/Techs";
 
 function App() {
   const particlesInit = useCallback(async engine => {
-    console.log(engine);
+    //console.log(engine);
     await loadFull(engine);
   }, []);
 

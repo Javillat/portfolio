@@ -3,33 +3,47 @@
     min-height: 100vh;
 }
 .resume-div{
-    /* border: rgb(253, 252, 252);
-    border-radius: 10px;
-    border-style: groove;
-    border-width: 2px; */
-    width: 100vw;
-    min-height: 92vh;
-    background-image: linear-gradient(-45deg, white 50%, orange 50%);
-    
-    /* background-color: rgba(245,245,245, 0.6); */
-    /* padding: 10px 5px; */
+    max-width: 85vw;
+    font-family: var(--base-font);
+    margin: auto;
+    padding: 10px;
+    /* min-height: 92vh; */
+    /* background-image: linear-gradient(-45deg, var(--moonstone) 50%, var(--electric-blue) 50%); *Division pantalla en 2 colores al 50% en diagonal */
 }
 
-/* .resume-left {
-    width: 49%;
-    height: 100%;
-    float: left;
-    border-right: 1px solid black;
-    transform: skewX(-45deg);
-}
 
-.resume-right {
-    width: 49%;
-    height: 100%;
-    border-left: 1px solid blue;
-    float: right;
-    transform: skew(-45deg);
-} */
+@media (min-width: 1280px) {
+    .xl\:text-\[3rem\] {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1024px) {
+    .lg\:text-\[2rem\] {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .md\:text-\[1\.8rem\] {
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 768px) {
+    .md\:px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media (min-width: 640px) {
+    .sm\:text-\[1\.5rem\] {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 640px) {
+    .sm\:px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
 
 .resume-title{
     font-family: 'Rubik 80s Fade';

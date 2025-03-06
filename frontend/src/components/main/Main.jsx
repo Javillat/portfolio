@@ -28,23 +28,20 @@ export default function Main() {
             <section className="section-resume-perfil">
                 <Whoami />
             </section>
+                <Technologies />
             {/* <section className="section-solutions">
                 <h1>Solutions</h1>
             </section>*/}
             <section className="section-projects">
                 <Projects />
             </section>
-            <section className="section-tech">
-                <p>Technologies</p>
-                <Technologies />
-            </section>
             <section className="section-achievement">
                 <h1>Achievements</h1>
                 <Achievement />
             </section>
-            <section className="section-certificate">
+            {/* <section className="section-certificate">
                 <h1>Certificate</h1>
-            </section>
+            </section> */}
             <section className="section-contact">
                 <Contact />
             </section>
