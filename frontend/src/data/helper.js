@@ -90,6 +90,10 @@ export const skills = [
         icon: reactRouter,
     },
     {
+        name: 'AI',
+        icon: ai,
+    },
+    {
         name: "Algolia",
         icon: algolia,
     },
@@ -129,8 +133,4 @@ export const skills = [
         name: "Slack",
         icon: slack,
     },
-    {
-        name: 'AI',
-        icon: ai,
-    }
 ];

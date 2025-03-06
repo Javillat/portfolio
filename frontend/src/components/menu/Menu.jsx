@@ -48,7 +48,7 @@ export default function Menu() {
                     <FormControlLabel
                         labelPlacement={isChecked ? "end" : "start"}
                         // style={{ paddingLeft: '2em' }}
-                        label={isChecked ? "ES" : "EN"}
+                        label={isChecked ? "es" : "en"}
                         control={<Switch checked={isChecked} value={isChecked ? 'en' : 'es'} onChange={onChangeLang} defaultValue={'es'} inputProps={{
                             'aria-label': _LANGUAGES.map((lng) => {
                                 return lng.code

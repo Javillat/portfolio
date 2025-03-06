@@ -89,7 +89,7 @@
     font-family: 'The Nautigal';
     font-size: 65px;
     font-weight: 800;
-    color: var(--orange-web);
+    color: var(--secundary-mint-neon);
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .13em solid orange;
@@ -137,7 +137,7 @@
 }
 
 .whoami_container .fullstack h2 {
-    font-family: 'Montserrat, sans-serif';
+    font-family: var(--base-font);
     font-size: 72px;
     font-weight: 800;
     color: #FFF;
@@ -146,7 +146,7 @@
     max-width: fit-content;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(255, 165, 0);
+    border-right: .15em solid var(--secundary-mint-neon);
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -203,7 +203,7 @@
     /* flex-direction: column; */
     align-items: end;
     text-align: left;
-    font-family: 'Montserrat, sans-serif';
+    font-family: var(--text-font);
     font-size: 20px;
     font-weight: 700;
     padding-top: 20px;

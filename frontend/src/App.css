@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400;500;700&family=The+Nautigal:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=The+Nautigal:wght@400;700&family=Orbitron:wght@400;500;700&display=swap');
+
 
 
 :root {
@@ -14,9 +16,9 @@
   --orange-web: #fcab10ff;
   --pearl: #dbd5b5ff;
   --dark-blue: #0f4c75;
-  --base-font: 'Roboto Condensed', sans-serif;
+  --base-font: 'Doppio One', sans-serif;
   --title-font: 'The Nautigal', cursive;
-  --text-font: 'Montserrat', sans-serif;
+  --text-font: 'Roboto Condensed', sans-serif;
   --button-font: 'Orbitron', sans-serif;
 }
 
@@ -27,13 +29,13 @@ html {
 }
 
 section {
-  min-height: 92vh;
+  max-height: 92vh;
 }
 
 .sticky {
   /* background-color: rgba(43, 40, 40, 0.84); */
   background: rgba(255, 255, 255, 0.19);
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid var(--secundary-mint-neon);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.4px); 
   /*
@@ -52,7 +54,7 @@ section {
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: white orange;
+  scrollbar-color: white var(--secundary-mint-neon);
 }
 
 /* Works on Chrome, Edge, and Safari */

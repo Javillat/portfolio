@@ -18,8 +18,8 @@ nav div a {
 }
 
 a.active {
-    color: #ffa500;
-    border-bottom: 2px solid var(--imperial-red);
+    color: var(--secundary-mint-neon);
+    border-bottom: 2px solid var(--moonstone);
 
     /* text-decoration: cadetblue; */
 }

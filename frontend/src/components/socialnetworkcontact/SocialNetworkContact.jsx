@@ -10,7 +10,9 @@ import { orange } from '@mui/material/colors';
 import './socialnetworkcontact.css';
 
 const SocialNetworkContact = () => {
-    const orangecolor = orange[500];
+
+    const baseColor = getComputedStyle(document.documentElement).getPropertyValue('--secundary-mint-neon');
+    
 
     return (
         <div className="whoami_icons">
@@ -21,7 +23,7 @@ const SocialNetworkContact = () => {
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/javillatoro-full-stack"
             >
-              <LinkedInIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+              <LinkedInIcon style={{color: baseColor}} fontSize="large" sx={{ "&:hover": { color: "white" } }} />
             </a>
           </div>
           <div className="github">
@@ -31,7 +33,7 @@ const SocialNetworkContact = () => {
               rel="noopener noreferrer"
               href="https://www.github.com/Javillat"
             >
-              <GitHubIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+              <GitHubIcon style={{color: baseColor}} fontSize="large" sx={{ "&:hover": { color: "white" } }} />
             </a>
           </div>
           <div className="whatsapp">
@@ -41,7 +43,7 @@ const SocialNetworkContact = () => {
               rel="noopener noreferrer"
               href="https://wa.me/+50372146998"
             >
-              <WhatsAppIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+              <WhatsAppIcon style={{color: baseColor}} fontSize="large" sx={{ "&:hover": { color: "white" } }} />
             </a>
           </div>
           <div className="twitter">
@@ -51,7 +53,7 @@ const SocialNetworkContact = () => {
               rel="noopener noreferrer"
               href="https://www.x.com/Javillatoro_"
             >
-              <XIcon color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} />
+              <XIcon style={{color: baseColor}} fontSize="large" sx={{ "&:hover": { color: "white" } }} />
             </a>
           </div>
           {/* <div className="telegram">
