@@ -11,9 +11,9 @@ export default function Resume() {
     const { t } = useTranslation();
     const containerRef = useRef(null);
 
-    const textP = t('resumetext');
+    const resumeText = t('resumetext');
 
-    const splitWords = textP.split(" ").map((word, index) => (
+    const splitWords = resumeText.split(" ").map((word, index) => (
         <span key={index} className="word">{word} </span>
     ));
 
@@ -23,17 +23,17 @@ export default function Resume() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".resume-div",
-                start: "top 80%",
+                start: "top 90%",
                 end: "center 50%",
                 scrub: true,
-                markers: true
+                markers: false
             }
         });
 
         words.forEach((word, i) => {
             tl.to(word, {
                 color: "#eee",
-                duration: 0.3
+                duration: 0.5
             }, i * 0.1);
         });
 

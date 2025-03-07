@@ -1,14 +1,29 @@
 
 import { skills } from "../../data/helper";
+import { VscChevronLeft } from "react-icons/vsc";
+import { VscChevronRight } from "react-icons/vsc";
+import { RxSlash } from "react-icons/rx";
+
+
+
 import './tech.css';
 
 const Technologies = () => {
 
+    const chebronConfig = {
+        color: "var(--jade)",
+        size: "2em",
+    }
+
+    const slashConfig = {
+        color: "var(--imperial-red)",
+        size: "2em",
+    }
 
     return (
         <section className="skills-container">
             <div className="skills-container-title">
-                <h1>Skills</h1>
+                <h1><VscChevronLeft style={chebronConfig} /> Skills <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
             </div>
             <div className="skills-container-skills">
                     {
