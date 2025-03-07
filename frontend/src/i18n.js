@@ -17,6 +17,7 @@ i18n
         backend: {
             //loadPath: `${getCurrentHost}/i18n/{{lng}}.json`,
             loadPath: 'http://localhost:3001/{{lng}}.json'
+            // loadPath: '../public/locales/{{lng}}.json'
         }
         // resources: {
         //     es: require('../src/components/languages/es.json'),

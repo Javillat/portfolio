@@ -28,9 +28,9 @@ html {
   box-sizing: border-box;
 }
 
-section {
+/* section {
   max-height: 92vh;
-}
+} */
 
 .app {
   display: flex;
@@ -39,20 +39,16 @@ section {
   align-items: center;
   font-family: var(--base-font);
   color: var(--primary-text-dark-gray);
-  background-color: var(--primay-black);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0;
   padding: 0;
 }
 
 .sticky {
-  /* background-color: rgba(43, 40, 40, 0.84); */
   background: rgba(255, 255, 255, 0.19);
   border: 1px solid var(--secundary-mint-neon);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.4px); 
-  /*
-    border-radius: 16px;*/
 }
 
 .App-header {
