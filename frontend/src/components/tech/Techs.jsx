@@ -23,7 +23,7 @@ const Technologies = () => {
     return (
         <section className="skills-container">
             <div className="skills-container-title">
-                <h1><VscChevronLeft style={chebronConfig} /> Skills <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
+                <h1 style={{color: "var(--secundary-mint-neon)"}}><VscChevronLeft style={chebronConfig} /> Skills <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
             </div>
             <div className="skills-container-skills">
                     {

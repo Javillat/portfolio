@@ -1,0 +1,20 @@
+{
+        "translation": {
+                "title": "Portfolio",
+                "subtitle": "My work Portfolio",
+                "home": "Home",
+                "resume": "Resume",
+                "resumeslighlyfirst": "I am passionate about building innovative solutions that make a real impact on people's lives.",
+                "resumeslighlylast": "My focus is on clean, efficient code and delivering solutions that align with business goals.",
+                "projects": "Projects",
+                "tech": "Tech",
+                "achievement": "Achievement",
+                "certificate": "Certificate",
+                "contact": "Contact",
+                "recommend": "Recommend",
+                "about": "About Me",
+                "whoami": "Who Am I",
+                "resumetext": "I am a full-stack developer driven by an unwavering passion for innovation. My home is the dynamic universe of web development, transforming challenges into opportunities and code into captivating experiences. Constantly evolving and always ready to embrace the next great technological challenge that expands my horizons.",
+                "resumetextsecond": "Fusing back-end and front-end, providing fast, practical, strong solutions, designed around the client's ideas and needs and their objectives, optimized to be scalable!"
+        }
+}

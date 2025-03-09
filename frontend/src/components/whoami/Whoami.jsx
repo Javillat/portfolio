@@ -19,10 +19,6 @@ export default function Whoami() {
   return (
     <div className="whoami-superior">
       <div className="whoami_container">
-        {/* <header className="header_whoami">
-          <p>{t('whoami')}:</p>
-        </header> */}
-        
         <div className="fullstack">
           <h2><span className="imperial-red">[</span><span>FullStack Developer</span><span className="imperial-red">]</span></h2>
         </div>

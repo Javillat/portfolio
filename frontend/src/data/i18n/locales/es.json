@@ -1,0 +1,20 @@
+{
+        "translation": {
+                "title": "Portafolio",
+                "subtitle": "Mi portafolio de trabajo",
+                "home": "Inicio",
+                "resume": "Resúmen",
+                "resumeslighlyfirst": "Me apasiona crear soluciones innovadoras que tengan un impacto real en la vida de las personas.",
+                "resumeslighlylast": "Mi enfoque está en el código limpio y eficiente y en brindar soluciones que se alineen con los objetivos comerciales.",
+                "projects": "Proyectos",
+                "tech": "Tecnologías",
+                "achievement": "Logros",
+                "certificate": "Certificado",
+                "contact": "Contacto",
+                "recommend": "Recomendación",
+                "about": "Acerca de",
+                "whoami": "Quién soy",
+                "resumetext": "Soy un desarrollador full-stack impulsado por una pasión inquebrantable por la  Mi hogar, es el dinámico universo del desarrollo web, transformo desafíos en oportunidades y código en experiencias cautivadoras. Constantemente en evolución y siempre listo para abrazar el próximo gran reto tecnológico que expanda mis horizontes.",
+                "resumetextsecond": "Fucionar back-end y front-end, proveer soluciones, rápidas y practicas, fuertes, diseñadas sobre las ideas y necesidades del cliente y sus objetivos, optimizadas para ser escalables!"
+        }
+}

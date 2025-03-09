@@ -52,8 +52,8 @@ html {
 }
 
 .App-header {
-  max-width: 65%;
-  min-height: 7vh;
+  max-width: 55%;
+  max-height: 7vh;
   display: flex;
   position: fixed;
   top: 10px;

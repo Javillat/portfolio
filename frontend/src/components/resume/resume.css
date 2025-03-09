@@ -15,7 +15,7 @@
     max-width: 85%;
     margin: auto;
     text-align: center;
-    font-family: var(--base-font);
+    font-family: var(--text-font);
     color: #111;
     font-size: clamp(18px, 5vw, 48px);
   }

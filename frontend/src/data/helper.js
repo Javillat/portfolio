@@ -18,6 +18,7 @@ import sequelize from '../assets/icons/sequelize.png';
 import reactRouter from '../assets/icons/reactRouter.png';
 import next from '../assets/icons/nextjs.png';
 import algolia from '../assets/icons/algolia.png';
+import framer from '../assets/icons/framer.png';
 import materialUI from '../assets/icons/materialUI.png';
 import jira from '../assets/icons/jira.png';
 import miro from '../assets/icons/miro.png';
@@ -96,6 +97,10 @@ export const skills = [
     {
         name: "Algolia",
         icon: algolia,
+    },
+    {
+        name: 'Framer Motion',
+        icon: framer,
     },
     {
         name: 'Material UI',
