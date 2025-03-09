@@ -39,29 +39,41 @@ html {
   align-items: center;
   font-family: var(--base-font);
   color: var(--primary-text-dark-gray);
-  /* min-height: 100vh; */
   margin: 0;
   padding: 0;
 }
 
 .sticky {
   background: rgba(255, 255, 255, 0.19);
-  border: 1px solid var(--secundary-mint-neon);
+  border: 2px solid var(--secundary-mint-neon);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.4px); 
 }
 
 .App-header {
-  max-width: 55%;
-  max-height: 7vh;
+  max-width: 65%;
   display: flex;
   position: fixed;
-  top: 10px;
-  padding-top: 3px;
+  top: 15px;
   z-index: 1;
   justify-content: space-between;
   align-items: center;
   border-radius: 50px;
+}
+
+.animate-neon-gradient {
+  animation: neon-gradient 3s linear infinite;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to right, var(--secundary-mint-neon), var(--moonstone), var(--secundary-mint-neon));
+}
+
+@keyframes neon-gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Works on Firefox */

@@ -47,13 +47,13 @@ export default function Menu() {
                 <FormControl>
                     <FormControlLabel
                         labelPlacement={isChecked ? "end" : "start"}
-                        // style={{ paddingLeft: '2em' }}
+                        style={{ paddingLeft: '3em', fontFamily: 'var(--base-font)', color: 'var(--dark-blue)', fontSize: '1.5em' }}
                         label={isChecked ? "es" : "en"}
                         control={<Switch checked={isChecked} value={isChecked ? 'en' : 'es'} onChange={onChangeLang} defaultValue={'es'} inputProps={{
                             'aria-label': _LANGUAGES.map((lng) => {
                                 return lng.code
                             })
-                        }} size="medium" color="warning" />} />
+                        }} size="medium" style={{color: "var(--dark-blue)"}} />} />
                 </FormControl>
             </div>
             {/* color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} /> */}

@@ -12,7 +12,7 @@ nav div a {
     color: var(--primary-text-dark-gray);
     text-decoration: none;
     letter-spacing: 0.02rem;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     /* text-transform: uppercase; */
 }
