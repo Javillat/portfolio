@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 import { _LANGUAGES } from "../config/index";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
 import FormControl from "@mui/material/FormControl";
 import { FormControlLabel } from "@mui/material";
 import Switch from "@mui/material/Switch";
+import Brand from '../../assets/brand/Brand';
 import './menu.css';
 
 
@@ -26,9 +26,7 @@ export default function Menu() {
 
     return (
         <nav>
-            <div className="nav__mark">
-                Javillat
-            </div>
+            <Brand />
             <div className="menu">
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
@@ -47,13 +45,13 @@ export default function Menu() {
                 <FormControl>
                     <FormControlLabel
                         labelPlacement={isChecked ? "end" : "start"}
-                        style={{ paddingLeft: '3em', fontFamily: 'var(--base-font)', color: 'var(--dark-blue)', fontSize: '1.5em' }}
+                        style={{ paddingLeft: '1.5em', fontFamily: 'var(--base-font)', color: 'var(--dark-blue)', fontSize: '1.5em' }}
                         label={isChecked ? "es" : "en"}
                         control={<Switch checked={isChecked} value={isChecked ? 'en' : 'es'} onChange={onChangeLang} defaultValue={'es'} inputProps={{
                             'aria-label': _LANGUAGES.map((lng) => {
                                 return lng.code
                             })
-                        }} size="medium" style={{color: "var(--dark-blue)"}} />} />
+                        }} size="medium" style={{ color: "var(--dark-blue)" }} />} />
                 </FormControl>
             </div>
             {/* color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} /> */}

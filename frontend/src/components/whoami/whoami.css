@@ -22,20 +22,60 @@
     color: var(--white);
 }
 
+#sw-js-blob-svg {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(rgba(15, 76, 117, 0.563) 80%, transparent);
+    mask-image: linear-gradient(rgba(15, 76, 117, 0.563) 80%, transparent);
+    z-index: 1;
+    /* SVG en el fondo */
+}
+
+.profile-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    /* Ajusta el tamaño de la imagen */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    /* Imagen sobre el SVG */
+}
+
+.profile-picture:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 1rem; */
+    /* padding-bottom: .75rem; */
+    /* border: none; */
+    font-size: large;
+    width: 30%;
+    height: 100%;
+}
+
 .profile-picture img {
-    max-width: 30%;
+    max-width: 65%;
     height: auto;
-    margin: 10px;
-    border-bottom: 1px solid var(--jade);
-    border-right: 1px solid var(--imperial-red);
+    /* margin: 10px; */
     /* border-radius: 5px; */
-    border-bottom-left-radius: 0%;
+    /* border-bottom-left-radius: 0%;
     border-bottom-right-radius: 5px;
-    margin-right: 22px;
+    margin-right: 22px; */
     padding: 5px;
-    transform: rotate3d(0, 0, 1, 36deg);
+    /* transform: rotate3d(0, 0, 1, 0deg); */
     /* filter:drop-shadow(2px 1px #aaa) */
-    /* mask-image: linear-gradient(Black 80%, transparent); */
+    -webkit-mask-image: linear-gradient(rgba(15, 76, 117, 0.76) 80%, transparent);
+    mask-image: linear-gradient(rgba(15, 76, 117, 0.76) 80%, transparent);
+    z-index: 2;
 }
 
 
@@ -51,15 +91,13 @@
     display: flex;
     flex-direction: column;
     max-width: 100vw;
-    background-color: rgba(15,76,117,0.76);
+    background-color: rgba(15, 76, 117, 0.76);
     padding: 20px 25px;
     backdrop-filter: blur(5.4px);
     -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(5.4px);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	border: 1.5px solid rgba(255, 255, 255, 0.06);
-	/* border-radius: 8px; */
-    /* border: 1.5px solid rgba(209, 213, 219, 0.3); */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.06);
 }
 
 /* .header_whoami p {
@@ -73,6 +111,7 @@
 .typewriter {
     max-width: fit-content;
 }
+
 .whoami_container .typewriter h1 {
     width: fit-content;
     text-align: left;

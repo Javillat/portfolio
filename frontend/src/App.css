@@ -52,6 +52,8 @@ html {
 
 .App-header {
   max-width: 65%;
+  max-height: 8%;
+  padding: .58rem;
   display: flex;
   position: fixed;
   top: 15px;
@@ -61,8 +63,16 @@ html {
   border-radius: 50px;
 }
 
+.logo-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-right: 3.7%;
+}
+
 .animate-neon-gradient {
-  animation: neon-gradient 3s linear infinite;
+  animation: neon-gradient 3s alternate infinite;
   background-size: 200% 200%;
   background-image: linear-gradient(to right, var(--secundary-mint-neon), var(--moonstone), var(--secundary-mint-neon));
 }

@@ -39,9 +39,3 @@ a.active {
     justify-content: space-between;
     /* margin: auto; */
 }
-
-.nav__mark {
-    position: relative;
-    width: 100px;
-    height: auto;
-}
