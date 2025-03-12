@@ -4,7 +4,7 @@
 
 
 :root {
-  --primay-black: #0A0A0A;
+  --primary-black: #0A0A0A;
   --secundary-mint-neon: #4ECCA3;
   --moonstone: #2b9eb3ff;
   --imperial-red: #f8333cff;
@@ -27,10 +27,6 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-
-/* section {
-  max-height: 92vh;
-} */
 
 .app {
   display: flex;
