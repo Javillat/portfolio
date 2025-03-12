@@ -169,12 +169,20 @@
     font-weight: 600;
     color: var(--white);
 }
-.whoami-main-text-title h1 .color-shift {
+.color-shift {
     background: linear-gradient(90deg, var(--moonstone), var(--secundary-mint-neon), var(--electric-blue));
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient-shift 4s linear infinite;
+}
+
+.color-shift-reverse {
+    background: linear-gradient(90deg, var(--electric-blue), var(--moonstone), var(--secundary-mint-neon));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 6s linear infinite;
 }
 
 @keyframes gradient-shift {

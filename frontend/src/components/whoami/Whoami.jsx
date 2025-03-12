@@ -38,10 +38,10 @@ export default function Whoami() {
             <div className="fullstack">
               <h2><span className="pearl pl-2">[</span><span> Full-Stack Developer </span><span className="pearl pr-2">]</span></h2>
             </div>
-            <div className="resume-slighly pt-3 mt-2 px-4">
+            <div className="resume-slighly color-shift pt-3 mt-2 px-4">
                 {t("resumeslighlyfirst")}
             </div>
-            <div className="resume-slighly pb-3 px-4">
+            <div className="resume-slighly color-shift-reverse pb-3 px-4">
                 {t("resumeslighlylast")}
             </div>
           </div>
