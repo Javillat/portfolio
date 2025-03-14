@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import profilePicture from "../../assets/img/profile.PNG";
+import window_code from "../../assets/img/window_code.png";
 import { BsChevronRight, BsDashLg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss, FaJs, Fa } from "react-icons/fa";
 import Resume from "../resume/Resume";
@@ -28,7 +29,7 @@ export default function Whoami() {
           <img src={profilePicture} alt="javier-pic" className="profile-picture-img" />
         </div>
         <div className="whoami-item whoami-text">
-          <div className="whoami-quihubole"><span className="imperial-red"><BsChevronRight/></span> Quiubo, bienvenido a mi mundo!</div>
+          <div className="whoami-quihubole"><span className="imperial-red"><BsChevronRight /></span> Quiubo, bienvenido a mi mundo!</div>
           <div className="whoami-main-text-title">
             <h1 className="mt-2 pt-4">
               <span className="white">Soy </span><span className="color-shift">Javier Villatoro</span>
@@ -39,16 +40,28 @@ export default function Whoami() {
               <h2><span className="pearl pl-2">[</span><span> Full-Stack Developer </span><span className="pearl pr-2">]</span></h2>
             </div>
             <div className="resume-slighly color-shift pt-3 mt-2 px-4">
-                {t("resumeslighlyfirst")}
+              <span className="imperial-red"><BsChevronRight /></span> {t("resumeslighlyfirst")}
             </div>
             <div className="resume-slighly color-shift-reverse pb-3 px-4">
-                {t("resumeslighlylast")}
+              <span className="imperial-red"><BsChevronRight /></span> {t("resumeslighlylast")}
             </div>
           </div>
+        </div>
+        <div className="profile-picture-code">
+          <img src={window_code} alt="window-code" />
         </div>
         <div className="whoami-item profile-interactive-text">
           INTERACTIVE
         </div>
+        <ul className="profile-blocks-appear">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
       <div className="whoami-resume">
         <Resume />
