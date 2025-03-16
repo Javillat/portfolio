@@ -69,8 +69,8 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
   transform: translate(-50%, -50%);
@@ -81,7 +81,7 @@ html {
 
 .cursor__ball--big circle {
   fill: transparent;
-  stroke: #000;
+  stroke: var(--primary-text-dark-gray);
   stroke-width: 1px;
 }
 
@@ -91,7 +91,7 @@ html {
 }
 
 .cursor__ball--small circle {
-  fill: #e74c3c;
+  fill: var(--imperial-red);
   stroke: none;
 }
 
@@ -146,6 +146,8 @@ a, button, input, textarea, select, [role="button"] {
 .hovered {
   color: #e74c3c;
 }
+
+/* Fin cursor cola */
 
 .sticky {
   background: rgba(255, 255, 255, 0.19);
