@@ -46,6 +46,12 @@ export default function Whoami() {
               <span className="imperial-red"><BsChevronRight /></span> {t("resumeslighlylast")}
             </div>
           </div>
+          <div className="profile-contact">
+            <h2 className="mt-2 pt-4">Contáctame</h2>
+            <div className="profile-contact-links flex flex-column">
+              <a href="#contact" className="btn btn-cta">Contáctame</a>
+            </div>
+          </div>
         </div>
         <div className="profile-picture-code">
           <img src={window_code} alt="window-code" />

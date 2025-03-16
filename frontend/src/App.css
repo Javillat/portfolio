@@ -39,6 +39,114 @@ html {
   padding: 0;
 }
 
+/* Estilos para el cursor personalizado */
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+.cursor__ball {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.cursor__ball--big {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Halo effect for the big circle */
+.cursor__ball--big::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.7;
+  animation: pulse 2s infinite;
+}
+
+.cursor__ball--big circle {
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.cursor__ball--small {
+  width: 10px;
+  height: 10px;
+}
+
+.cursor__ball--small circle {
+  fill: #e74c3c;
+  stroke: none;
+}
+
+/* Adicional: efecto de estela para el círculo grande */
+.trail {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s, width 0.5s, height 0.5s;
+  opacity: 1;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Animación del halo */
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Ocultar el cursor por defecto cuando estamos sobre el body */
+body {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Mantener el cursor por defecto en elementos clicables para mejor UX */
+a, button, input, textarea, select, [role="button"] {
+  cursor: pointer;
+}
+
+/* Elementos hoverables */
+.hoverable {
+  transition: all 0.3s ease;
+}
+
+.hovered {
+  color: #e74c3c;
+}
+
 .sticky {
   background: rgba(255, 255, 255, 0.19);
   border: 2px solid var(--secundary-mint-neon);

@@ -2,6 +2,7 @@
 import { useCallback } from "react";
 import { Route, Routes } from "react-router-dom";
 import Particles from "react-particles";
+import CustomCursor from "./custom/CustomCursor.jsx";
 // import { SiJamboard } from "react-icons/si";
 import { loadFull } from "tsparticles";
 import About from './components/about/About';
@@ -26,14 +27,17 @@ function App() {
 
   }, []);
 
+
+
   // window.onscroll = () => {
   //   const header = document.querySelector(".App-header");
   //   const sticky = header.offsetTop;
   //   (window.pageYOffset > sticky) ? header.classList.add("sticky") : header.classList.remove("sticky");
   // }
-
+     
   return (
     <div className="app">
+      <CustomCursor />
       <Particles id="tsparticles" url="http://localhost:3001/json" init={particlesInit} loaded={particlesLoaded} />
       <ScrollToTop />
       <header className="App-header sticky">
@@ -51,3 +55,25 @@ function App() {
 }
 
 export default App;
+
+
+  // Ejemplo de uso
+  // const App = () => {
+  //   return (
+  //     <div className="app">
+  //       <CustomCursor />
+  //       <div className="content">
+  //         <HoverableElement>
+  //           <h1>Hello World</h1>
+  //         </HoverableElement>
+  //         <HoverableElement>
+  //           <button>Hover Me</button>
+  //         </HoverableElement>
+  //         <HoverableElement>
+  //           <p>This element has a hover effect</p>
+  //         </HoverableElement>
+  //       </div>
+  //     </div>
+  //   );
+  // };
+  
