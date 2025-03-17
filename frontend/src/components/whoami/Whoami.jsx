@@ -29,15 +29,20 @@ export default function Whoami() {
           <img src={profilePicture} alt="javier-pic" className="profile-picture-img" />
         </div>
         <div className="whoami-item whoami-text">
-          <div className="whoami-quihubole"><span className="imperial-red"><BsChevronRight /></span> Quiubo, bienvenido a mi mundo!</div>
+          <div className="whoami-quihubole"><span className="imperial-red"><BsChevronRight /></span>Bienvenido a mi mundo!</div>
           <div className="whoami-main-text-title">
             <h1 className="mt-2 pt-4">
+              <span className="white">Quiubo...</span>
+            </h1>
+          </div>
+          <div className="whoami-main-text-title">
+            <h1 className="pt-3">
               <span className="white">Soy </span><span className="color-shift">Javier Villatoro</span>
             </h1>
           </div>
-          <div className="profile-resume flex flex-column p-4">
+          <div className="profile-resume flex flex-column p-4 pb-2">
             <div className="fullstack">
-              <h2><span className="pearl pl-2">[</span><span> Full-Stack Developer </span><span className="pearl pr-2">]</span></h2>
+              <h2><span className="imperial-red pl-2">[</span><span> Full-Stack Developer </span><span className="imperial-red pr-2">]</span></h2>
             </div>
             <div className="resume-slighly color-shift pt-3 mt-2 px-4">
               <span className="imperial-red"><BsChevronRight /></span> {t("resumeslighlyfirst")}
@@ -46,11 +51,13 @@ export default function Whoami() {
               <span className="imperial-red"><BsChevronRight /></span> {t("resumeslighlylast")}
             </div>
           </div>
-          <div className="profile-contact">
-            <h2 className="mt-2 pt-4">Contáctame</h2>
-            <div className="profile-contact-links flex flex-column">
-              <a href="#contact" className="btn btn-cta">Contáctame</a>
-            </div>
+          <div className="profile-cta">
+            <button className="cta-button-work">
+              <a href="#contact">Trabajemos juntos</a>
+            </button>
+            <button className="cta-button-talk">
+              <a href="#contact">Hablemos de tu proyecto</a>
+            </button>
           </div>
         </div>
         <div className="profile-picture-code">
