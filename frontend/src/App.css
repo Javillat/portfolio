@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=The+Nautigal:wght@400;700&family=Orbitron:wght@400;500;700&display=swap');
 
-
-
 :root {
   --primary-black: #0A0A0A;
   --secundary-mint-neon: #4ECCA3;
@@ -21,12 +19,22 @@
   --button-font: 'Orbitron', sans-serif;
 }
 
-
-
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
+body {
+  font-family: var(--base-font);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-dark-gray);
+  background-color: linear-gradient(90deg, var(--dark-blue), var(--moonstone));
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  }
 
 .app {
   display: flex;
@@ -126,12 +134,7 @@ html {
 }
 
 /* Ocultar el cursor por defecto cuando estamos sobre el body */
-body {
-  cursor: none;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+
 
 /* Mantener el cursor por defecto en elementos clicables para mejor UX */
 a, button, input, textarea, select, [role="button"] {
