@@ -29,7 +29,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-dark-gray);
-  background-color: linear-gradient(90deg, var(--dark-blue), var(--moonstone));
+  background: linear-gradient(90deg, var(--dark-blue), var(--moonstone));
   cursor: none;
   margin: 0;
   padding: 0;

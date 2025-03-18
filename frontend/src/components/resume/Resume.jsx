@@ -22,7 +22,7 @@ export default function Resume() {
 
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".resume-div",
+                trigger: ".resume-text",
                 start: "top 90%",
                 end: "center 50%",
                 scrub: true,
@@ -37,12 +37,14 @@ export default function Resume() {
             }, i * 0.1);
         });
 
-        return () => tl.kill(); 
+        return () => tl.kill();
     }, []);
 
     return (
-        <section className="resume-div" ref={containerRef}>
-            <p>{splitWords}</p>
+        <section className="resume-back-text">
+            <div className="resume-text" ref={containerRef}>
+                <p>{splitWords}</p>
+            </div>
         </section>
     );
 }

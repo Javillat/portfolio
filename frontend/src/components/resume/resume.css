@@ -2,7 +2,12 @@
     min-width: 100vw;
     min-height: 100vh;
 }
-.resume-div{
+.resume-back-text {
+    width: 100vw;
+    background: linear-gradient(149deg, var(--primary-black), var(--dark-blue));
+}
+
+.resume-text {
     max-width: 85vw;
     font-family: var(--base-font);
     margin: auto;
@@ -11,7 +16,7 @@
     /* background-image: linear-gradient(-45deg, var(--moonstone) 50%, var(--electric-blue) 50%); *Division pantalla en 2 colores al 50% en diagonal */
 }
 
-.resume-div p {
+.resume-text p {
     max-width: 85%;
     margin: auto;
     text-align: center;

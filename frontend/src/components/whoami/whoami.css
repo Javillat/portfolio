@@ -26,7 +26,7 @@
 
 .whoami-superior {
     display: flex;
-    /* top: 6rem; */
+    top: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: row-reverse;
     max-width: 100vw;
-    background-color: rgba(15, 76, 117, 0.76);
+    /* background-color: rgba(15, 76, 117, 0.76); */
     padding: 20px 25px;
     /* -webkit-backdrop-filter: blur(5.4px);
     -webkit-backdrop-filter: blur(5.4px); */
@@ -335,15 +335,6 @@
         border-color: var(--secundary-mint-neon)
     }
 }
-
-.whoami-resume {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem !important;
-    font-size: large;
-}
-
 
 .profile-resume {
     display: flex;
