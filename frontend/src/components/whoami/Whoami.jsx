@@ -66,7 +66,9 @@ export default function Whoami() {
         <div className="whoami-item profile-interactive-text">
           INTERACTIVE
         </div>
-        <ul className="profile-blocks-appear">
+        <div className="profile-blocks-appear">
+
+        <ul >
           <li></li>
           <li></li>
           <li></li>
@@ -75,6 +77,7 @@ export default function Whoami() {
           <li></li>
           <li></li>
         </ul>
+        </div>
       </div>
       <div className="whoami-resume">
         <Resume />
