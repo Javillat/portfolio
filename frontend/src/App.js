@@ -34,6 +34,15 @@ function App() {
           <Route path="tech" element={<Technologies />} />
         </Route>
       </Routes>
+      <ul className="profile-blocks-appear">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
     </div>
   );
 }

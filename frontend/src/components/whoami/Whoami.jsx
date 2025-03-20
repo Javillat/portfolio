@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Added import for Link
+
 import { useTranslation } from "react-i18next";
 import profilePicture from "../../assets/img/profile.PNG";
 import window_code from "../../assets/img/window_code.png";
 import { BsChevronRight, BsDashLg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss, FaJs, Fa } from "react-icons/fa";
+import star from "../../assets/icons/star.svg";
 import Resume from "../resume/Resume";
 
 import "./whoami.css";
@@ -53,56 +56,141 @@ export default function Whoami() {
           </div>
           <div className="profile-cta">
             <button className="cta-button-work">
-              <a href="#contact">Trabajemos juntos</a>
+              <Link to="#contact">Trabajemos juntos</Link>
             </button>
             <button className="cta-button-talk">
-              <a href="#contact">Hablemos de tu proyecto</a>
+              <Link to="#contact">Hablemos de tu proyecto</Link>
             </button>
+
           </div>
         </div>
         <div className="profile-picture-code">
           <img src={window_code} alt="window-code" />
         </div>
-        <div className="whoami-item profile-interactive-text">
-          INTERACTIVE
-        </div>
+        <section class="whoami-item profile-interactive-text margin-20">
+          <div className="py-4 py-lg-8 show-stadistical">
+            
+          </div>
+          <div className="d-flex align-items-center justify-content-center overflow-hidden py-1_5 lg-py-3 rotate-3" style={{ zIndex: "2", marginLeft: "-0.25rem", marginRight: "-0.25rem", background: "linear-gradient(to right, var(--primary-black), var(--dark-blue))" }}>
+            <div className="d-flex flex-row p-2 overflow-hidden custom-group custom-group">
+              <div className="d-flex flex-row justify-content-around custom-marquee">
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Accessible</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "#FFF" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Responsive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Scalable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Interactive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Secure</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Reliable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Engaging</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
+              <div className="d-flex flex-row justify-content-around custom-marquee">
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Accessible</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Responsive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Scalable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Interactive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Secure</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Reliable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Engaging</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
+              <div className="d-flex flex-row justify-content-around custom-marquee">
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Accessible</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Responsive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Scalable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Interactive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Secure</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Reliable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Engaging</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
+              <div className="d-flex flex-row justify-content-around custom-marquee">
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Accessible</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Responsive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Scalable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Interactive</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Secure</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Reliable</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                <div className="d-inline-flex align-items-center custom-gap">
+                  <span className="text-uppercase fw-semibold custom-text">Engaging</span>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-        <Resume />
-        <ul className="profile-blocks-appear">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <Resume />
     </div >
   );
 }
-
-// <div className="fullstack">
-//           <h2><span className="imperial-red">[</span><span>FullStack Developer</span><span className="imperial-red">]</span></h2>
-//         </div>
-//         <div className="profile-main-picture">
-//           <div className="profile-resume flex flex-column p-4">
-//             <div className="resume-slighly pt-4 px-5 m-auto">
-//               <div className="moonstone slighly-left">
-//                 {t('resumeslighlyfirst')}
-//               </div>
-//             </div>
-//             <div className="resume-slighly pb-4 px-5 m-auto">
-//               <div className="moonstone slighly-right">
-//                 {t('resumeslighlylast')}
-//               </div>
-//             </div>
-//             {/* <p className="moonstone"></p> */}
-//             {/* <p></p> */}
-//           </div>
-//           <div className="profile-picture">
-//             <img src={profilePicture} alt="javier-pic" />
-//           </div>
-//         </div>
-//         <div className="typewriter">
-//           <h1><span className="imperial-red">{<BsDashLg />}</span>Javier Villatoro<span className="imperial-red">{<BsDashLg />}</span></h1>
-//         </div>

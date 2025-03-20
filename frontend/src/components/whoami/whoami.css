@@ -207,16 +207,15 @@
 }
 
 .profile-interactive-text {
+    /* left: 50%;
+    transform: translateX(-50%); */
     position: relative;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding-left: 100px; */
-    width: 100%;
+    top: -150px;
+    width: 125%;
 }
 
 .typewriter {
@@ -590,4 +589,114 @@
 .cta-button-talk:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(102, 179, 255, 0.475);
+}
+
+/* Div con translate en diagonal */
+
+
+@media (min-width: 768px) {
+    .md-rotate-3 {
+        transform: rotate(3deg);
+    }
+}
+
+@media (min-width: 992px) {
+    .lg-translate-y-16 {
+        transform: translateY(4rem);
+    }
+}
+
+.margin-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.show-stadistical {
+    z-index: 2;
+    transform: translateY(2.5rem) rotate(6deg);
+    background: linear-gradient(to right, var(--dark-blue), var(--primary-black));
+    opacity: 0.6;
+}
+
+/* Div que contiene los item con el efecto de slide infinito */
+.rotate-3 {
+    transform: rotate(-3deg);
+}
+
+@media (min-width: 992px) {
+    .lg-py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+.custom-group {
+    --gap: 1rem;
+    gap: var(--gap);
+    --duration: 30s;
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+.custom-marquee {
+    flex-shrink: 0;
+    gap: var(--gap);
+    animation: marquee var(--duration) linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.custom-gap {
+    gap: 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .custom-gap {
+        gap: 1rem;
+    }
+}
+
+.custom-text {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2em;
+    color: var(--primary-text-dark-gray);
+}
+
+@media (min-width: 768px) {
+    .custom-text {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-text {
+        font-size: 1.25rem;
+    }
+}
+
+.custom-width {
+    width: 1.25rem;
+}
+
+@media (min-width: 992px) {
+    .custom-width {
+        width: 1.75rem;
+    }
 }
