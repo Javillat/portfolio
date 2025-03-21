@@ -68,10 +68,8 @@ export default function Whoami() {
           <img src={window_code} alt="window-code" />
         </div>
         <section class="whoami-item profile-interactive-text margin-20">
-          <div className="py-4 py-lg-8 show-stadistical">
-            
-          </div>
-          <div className="d-flex align-items-center justify-content-center overflow-hidden py-1_5 lg-py-3 rotate-3" style={{ zIndex: "2", marginLeft: "-0.25rem", marginRight: "-0.25rem", background: "linear-gradient(to right, var(--primary-black), var(--dark-blue))" }}>
+          <div className="py-4 py-lg-8 overflow-hidden first-item-slider"></div>
+          <div className="d-flex align-items-center justify-content-center overflow-hidden py-1_5 lg-py-3 second-item-slider">
             <div className="d-flex flex-row p-2 overflow-hidden custom-group custom-group">
               <div className="d-flex flex-row justify-content-around custom-marquee">
                 <div className="d-inline-flex align-items-center custom-gap">

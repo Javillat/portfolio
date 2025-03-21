@@ -207,15 +207,21 @@
 }
 
 .profile-interactive-text {
-    /* left: 50%;
-    transform: translateX(-50%); */
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     top: -150px;
-    width: 125%;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 15%,
+            black 85%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 15%,
+            black 85%,
+            transparent);
 }
 
 .typewriter {
@@ -611,18 +617,25 @@
     margin-bottom: 20px;
 }
 
-.show-stadistical {
-    z-index: 2;
-    transform: translateY(2.5rem) rotate(6deg);
-    background: linear-gradient(to right, var(--dark-blue), var(--primary-black));
+.first-item-slider,
+.second-item-slider {
     opacity: 0.6;
+    /* width: 100%; */
+}
+
+.first-item-slider {
+    transform: translateY(2.5rem) rotate(3deg);
+    background: linear-gradient(to right, var(--dark-blue), var(--primary-black));
+    z-index: 0;
+}
+
+.second-item-slider {
+    background: linear-gradient(to right, var(--primary-black), var(--dark-blue));
+    transform: rotate(-3deg);
+    z-index: 2;
 }
 
 /* Div que contiene los item con el efecto de slide infinito */
-.rotate-3 {
-    transform: rotate(-3deg);
-}
-
 @media (min-width: 992px) {
     .lg-py-3 {
         padding-top: 0.75rem;
