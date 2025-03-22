@@ -20,7 +20,8 @@ const Technologies = () => {
     return (
         <section className="skills-container">
             <div className="skills-container-title">
-                <h1 style={{ color: "var(--secundary-mint-neon)" }}><VscChevronLeft style={chebronConfig} /> Mi stack <span>tecnológico</span> <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
+                <h2>CONSTANLY IMPROVING</h2>
+                <h1 style={{ color: "var(--imperial-red)" }}><VscChevronLeft style={chebronConfig} /> My Tech <span>stack</span> <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
             </div>
             <div className="skills-container-skills">
                 {
