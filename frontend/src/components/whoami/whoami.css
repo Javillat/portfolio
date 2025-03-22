@@ -212,6 +212,7 @@
     flex-direction: column;
     top: -150px;
     width: 100%;
+    min-height: 19vh;
     -webkit-mask-image: linear-gradient(to right,
             transparent,
             black 15%,
@@ -231,7 +232,6 @@
 .whoami-container .typewriter h1 {
     width: fit-content;
     text-align: left;
-    /* padding-top: 20px; */
     padding-left: 100px;
     font-family: 'The Nautigal';
     font-size: 65px;
@@ -620,7 +620,7 @@
 .first-item-slider,
 .second-item-slider {
     opacity: 0.6;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .first-item-slider {
@@ -643,25 +643,10 @@
     }
 }
 
-.custom-group {
-    --gap: 1rem;
-    gap: var(--gap);
-    --duration: 30s;
-    -webkit-mask-image: linear-gradient(to right,
-            transparent,
-            black 10%,
-            black 90%,
-            transparent);
-    mask-image: linear-gradient(to right,
-            transparent,
-            black 10%,
-            black 90%,
-            transparent);
-}
-
 .custom-marquee {
     flex-shrink: 0;
     gap: var(--gap);
+    display: flex;
     animation: marquee var(--duration) linear infinite;
 }
 
@@ -713,3 +698,40 @@
         width: 1.75rem;
     }
 }
+
+
+.custom-group {
+    --gap: 1rem;
+    gap: var(--gap);
+    --duration: 30s;
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+    display: flex;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Mueve el contenido completamente hacia la izquierda */
+    }
+}
+
+.custom-text {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2em;
+    color: var(--primary-text-dark-gray);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+

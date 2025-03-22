@@ -74,115 +74,115 @@ export default function Whoami() {
               <div className="d-flex flex-row justify-content-around custom-marquee">
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Accessible</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "#FFF" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "#FFF" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Responsive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Scalable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Interactive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Secure</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Reliable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Engaging</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
               <div className="d-flex flex-row justify-content-around custom-marquee">
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Accessible</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Responsive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Scalable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Interactive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Secure</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Reliable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Engaging</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
               <div className="d-flex flex-row justify-content-around custom-marquee">
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Accessible</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Responsive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Scalable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Interactive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Secure</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Reliable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Engaging</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div></div>
               <div className="d-flex flex-row justify-content-around custom-marquee">
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Accessible</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Responsive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Dynamic</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Scalable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Search Optimized</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Interactive</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Secure</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Reliable</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
                 <div className="d-inline-flex align-items-center custom-gap">
                   <span className="text-uppercase fw-semibold custom-text">Engaging</span>
-                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
+                  <img alt="star" loading="lazy" width="28" height="28" decoding="async" className="custom-width" style={{ color: "transparent" }} src={star} /></div>
               </div>
             </div>
           </div>
