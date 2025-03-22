@@ -11,14 +11,17 @@
 }
 
 .skills-container-title {
+  text-shadow: #ffffff;
   font-size: 2.5rem;
   text-transform: uppercase;
+
 }
 
 .skills-container-title h2 {
   font-family: var(--text-font);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--secundary-text-dark-gray);
+  text-transform: none;
 }
 
 .skills-container-skills {
