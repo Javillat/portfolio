@@ -17,7 +17,7 @@ export default function ContactMessage(props) {
 
     return (
         <section className="contact_container">
-            <div className="contact_containe_header">
+            <div className="contact_container_header">
                 <h2>{message}</h2>
             </div>
             <div className="contact_container_body">
