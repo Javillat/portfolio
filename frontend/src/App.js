@@ -11,6 +11,7 @@ import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scroll/ScrollToTop.js";
 import Technologies from "./components/tech/Techs";
+import ContactMessage from "./components/contact/ContactMessage.jsx";
 
 function App() {
 
@@ -32,6 +33,8 @@ function App() {
           <Route path='resume' element={<Resume />}/> {/** Ruta hijo */}
           <Route path="projects" element={<Projects />} />{/** Ruta hijo */}
           <Route path="tech" element={<Technologies />} />
+          {/* <Route path="about" element={<About />} /> */}
+          <Route path="contact" element={ContactMessage} />
         </Route>
       </Routes>
       <ul className="profile-blocks-appear">

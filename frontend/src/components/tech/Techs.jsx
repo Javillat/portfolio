@@ -10,6 +10,7 @@ const Technologies = () => {
     const chebronConfig = {
         color: "var(--jade)",
         size: "2em",
+        filter: "drop-shadow(0 0 8px rgb(255,59,48/0.8))"
     }
 
     const slashConfig = {

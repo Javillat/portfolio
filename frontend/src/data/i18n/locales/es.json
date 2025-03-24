@@ -15,6 +15,18 @@
                 "about": "Acerca de",
                 "whoami": "Quién soy",
                 "resumetext": "Soy un desarrollador full-stack impulsado por una pasión inquebrantable por la innovación. Mi hogar, es el dinámico universo del desarrollo web, transformo desafíos en oportunidades y código en experiencias cautivadoras. Constantemente en evolución y siempre listo para abrazar el próximo gran reto tecnológico que expanda mis horizontes.",
-                "resumetextsecond": "Fucionar back-end y front-end, proveer soluciones, rápidas y practicas, fuertes, diseñadas sobre las ideas y necesidades del cliente y sus objetivos, optimizadas para ser escalables!"
+                "resumetextsecond": "Fucionar back-end y front-end, proveer soluciones, rápidas y practicas, fuertes, diseñadas sobre las ideas y necesidades del cliente y sus objetivos, optimizadas para ser escalables!",
+                "approach_title": "Contactar",
+                "approach_subtitle_work": "¿Quieres hablar sobre trabajar juntos?",
+                "approach_subtitle_project": "¿Tienes un proyecto o idea y necesitas ayuda?",
+                "approach_answer_work_yes": "Si",
+                "approach_answer_project_yes": "Si",
+                "contact_title": "Titulo aqui",
+                "contact_message_left":"Mensaje",
+                "contact_company":"Empresa",
+                "contact_name":"Nombre",
+                "contact_phone":"Teléfono",
+                "contact_email":"Correo",
+                "contact_button": "Enviar"
         }
 }

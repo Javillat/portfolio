@@ -3,13 +3,13 @@ import "./navigation.css";
 
 const NavigationButton = () => {
     return (
-        <nav class="navigation">
-            <a href="#resume-div'" class="active"><span></span></a>
-            <a href="#project-container" class=""><span></span></a>
-            <a href="javascript:Navigation.scrollTo('.section-tech');" class=""><span></span></a>
-            {/* <a href="javascript:Navigation.scrollTo('.interests');" class=""><span></span></a>
-            <a href="javascript:Navigation.scrollTo('.publications');" class=""><span></span></a>
-            <a href="javascript:Navigation.scrollTo('.grail');" class=""><span></span></a> */}
+        <nav className="navigation">
+            <a href="#resume-div'" className="active"><span></span></a>
+            <a href="#project-container" className=""><span></span></a>
+            <a href="javascript:Navigation.scrollTo('.section-tech');" className=""><span></span></a>
+            {/* <a href="javascript:Navigation.scrollTo('.interests');" className=""><span></span></a>
+            <a href="javascript:Navigation.scrollTo('.publications');" className=""><span></span></a>
+            <a href="javascript:Navigation.scrollTo('.grail');" className=""><span></span></a> */}
         </nav>
     );
 }

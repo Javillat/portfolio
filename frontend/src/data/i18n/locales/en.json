@@ -15,6 +15,18 @@
                 "about": "About Me",
                 "whoami": "Who Am I",
                 "resumetext": "I am a full-stack developer driven by an unwavering passion for innovation. My home is the dynamic universe of web development, transforming challenges into opportunities and code into captivating experiences. Constantly evolving and always ready to embrace the next great technological challenge that expands my horizons.",
-                "resumetextsecond": "Fusing back-end and front-end, providing fast, practical, strong solutions, designed around the client's ideas and needs and their objectives, optimized to be scalable!"
+                "resumetextsecond": "Fusing back-end and front-end, providing fast, practical, strong solutions, designed around the client's ideas and needs and their objectives, optimized to be scalable!",
+                "approach_title": "Get in touch",
+                "approach_subtitle_work": "Do you want to talk about working together?",
+                "approach_subtitle_project": "Do you have a project or idea and want help?",
+                "approach_answer_work_yes": "Yes",
+                "approach_answer_project_yes": "Yes",
+                "contact_title": "Title here",
+                "contact_message_left":"Message",
+                "contact_company":"Company",
+                "contact_name":"Name",
+                "contact_phone":"Phone",
+                "contact_email":"Email",
+                "contact_button": "Send"
         }
 }

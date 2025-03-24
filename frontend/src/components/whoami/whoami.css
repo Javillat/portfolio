@@ -715,15 +715,18 @@
             black 90%,
             transparent);
     display: flex;
-    overflow: hidden; /* Asegura que el contenido no se desborde */
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
 }
 
 @keyframes marquee {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(-100%); /* Mueve el contenido completamente hacia la izquierda */
+        transform: translateX(-100%);
+        /* Mueve el contenido completamente hacia la izquierda */
     }
 }
 
@@ -732,6 +735,6 @@
     line-height: 1.5rem;
     letter-spacing: 0.2em;
     color: var(--primary-text-dark-gray);
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
 }
-

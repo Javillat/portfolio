@@ -2,7 +2,7 @@ import Whoami from "../whoami/Whoami";
 import Projects from "../projects/Projects";
 import Technologies from "../tech/Techs";
 import Achievement from "../achievement/Achievement";
-import Contact from "../contact/contact";
+import Contact from "../contact/ContactApproach";
 import SocialNetworkContact from "../socialnetworkcontact/SocialNetworkContact";
 import NavigationButton from "../nav/Navigation";
 import './main.css'
@@ -39,9 +39,7 @@ export default function Main() {
             <section className="section-recommended">
                 <h1>Recommended</h1>
             </section>
-            <section className="section-contact">
                 <Contact />
-            </section>
             <footer id="copyleft">Footer</footer>
         </main>
     );

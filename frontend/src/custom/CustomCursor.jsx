@@ -187,7 +187,7 @@ const CustomCursor = () => {
       <div ref={trailsContainerRef} className="trails-container">
         {trails.map((trail) => (
           <div
-            key={trail.id}
+            key={trail.id + Math.random()}
             id={`trail-${trail.id}`}
             className="trail"
             style={{

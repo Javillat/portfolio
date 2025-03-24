@@ -32,7 +32,7 @@ export default function Whoami() {
           <img src={profilePicture} alt="javier-pic" className="profile-picture-img" />
         </div>
         <div className="whoami-item whoami-text">
-          <div className="whoami-quihubole"><span className="imperial-red"><BsChevronRight /></span>Bienvenido a mi mundo!</div>
+          <div className="whoami-quihubole"><span className="imperial-red" style={{ filter: 'drop-shadow(0 0 8px rgba(255, 59, 48, 0.8))' }} ><BsChevronRight /></span>Bienvenido a mi mundo!</div>
           <div className="whoami-main-text-title">
             <h1 className="mt-2 pt-4">
               <span className="white">Quiubo...</span>
@@ -67,7 +67,7 @@ export default function Whoami() {
         <div className="profile-picture-code">
           <img src={window_code} alt="window-code" />
         </div>
-        <section class="whoami-item profile-interactive-text margin-20">
+        <section className="whoami-item profile-interactive-text margin-20">
           <div className="py-4 py-lg-8 overflow-hidden first-item-slider"></div>
           <div className="d-flex align-items-center justify-content-center overflow-hidden py-1_5 lg-py-3 second-item-slider">
             <div className="d-flex flex-row p-2 overflow-hidden custom-group custom-group">
