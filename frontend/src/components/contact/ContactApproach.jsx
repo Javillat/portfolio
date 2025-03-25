@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ContactMessage from './ContactMessage';
+import work from '../../assets/icons/work.svg'
+import project from '../../assets/icons/project.svg'
 import './contact.css'
 
 export default function Contact() {
@@ -26,12 +28,18 @@ export default function Contact() {
                     <div className='approach-glass-container'>
                         <div className='approach-glass-dark-container'>
                             <div className='approach-glass-twin-answer-container'>
+                                <span>
+                                    <img src={work} alt="Work" />
+                                </span>
                                 {t("approach_subtitle_work")}
                                 <div className='approach-glass-twin-answer-button-container work'>
                                     <span onClick={handleWorkContactMessage}>{t("approach_answer_work_yes")}</span>
                                 </div>
                             </div>
                             <div className='approach-glass-twin-answer-container'>
+                                <span>
+                                    <img src={project} alt="Work" />
+                                </span>
                                 {t("approach_subtitle_project")}
                                 <div className='approach-glass-twin-answer-button-container project'>
                                     <span onClick={handleProjectContactMessage}>{t("approach_answer_project_yes")}</span>

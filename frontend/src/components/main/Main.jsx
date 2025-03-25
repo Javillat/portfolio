@@ -32,13 +32,13 @@ export default function Main() {
             <section className="section-projects">
                 <Projects />
             </section>
-            <section className="section-achievement">
+            {/* <section className="section-achievement">
                 <h1>Achievements</h1>
                 <Achievement />
             </section>
             <section className="section-recommended">
                 <h1>Recommended</h1>
-            </section>
+            </section> */}
                 <Contact />
             <footer id="copyleft">Footer</footer>
         </main>

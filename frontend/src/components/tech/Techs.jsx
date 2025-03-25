@@ -22,7 +22,7 @@ const Technologies = () => {
         <section className="skills-container">
             <div className="skills-container-title">
                 <h1 style={{ color: "var(--white)" }}><VscChevronLeft style={chebronConfig} /> My Tech <span>stack</span> <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
-                <h2 className="pt-3"> I am constantly learning, acquiring new knowledge, and improving myself. </h2>
+                <h2 className="pt-3"> I'm constantly learning, acquiring new knowledge, and improving myself. </h2>
             </div>
             <div className="skills-container-skills">
                 {
