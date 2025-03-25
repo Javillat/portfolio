@@ -61,6 +61,13 @@
     z-index: 4;
 }
 
+.approach-glass-twin-answer-container:hover {
+    box-shadow: 0 0 4px 4px var(--moonstone);
+    transform: scale(1.01);
+    border: none;
+    transition: 0.4s ease-in;
+} 
+
 .approach-glass-twin-answer-button-container.work span,
 .approach-glass-twin-answer-button-container.project span {
     position: relative;
