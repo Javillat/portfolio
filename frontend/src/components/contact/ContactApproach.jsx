@@ -27,14 +27,14 @@ export default function Contact() {
                         <div className='approach-glass-dark-container'>
                             <div className='approach-glass-twin-answer-container'>
                                 {t("approach_subtitle_work")}
-                                <div className='approach-glass-twin-answer-button-container'>
-                                    <span className='enance-span' onClick={handleWorkContactMessage}>{t("approach_answer_work_yes")}</span>
+                                <div className='approach-glass-twin-answer-button-container work'>
+                                    <span onClick={handleWorkContactMessage}>{t("approach_answer_work_yes")}</span>
                                 </div>
                             </div>
                             <div className='approach-glass-twin-answer-container'>
                                 {t("approach_subtitle_project")}
-                                <div className='approach-glass-twin-answer-button-container'>
-                                    <span className='enance-span' onClick={handleProjectContactMessage}>{t("approach_answer_project_yes")}</span>
+                                <div className='approach-glass-twin-answer-button-container project'>
+                                    <span onClick={handleProjectContactMessage}>{t("approach_answer_project_yes")}</span>
                                 </div>
                             </div>
                         </div>
