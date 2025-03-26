@@ -27,6 +27,8 @@
                 "contact_name":"Nombre",
                 "contact_phone":"Teléfono",
                 "contact_email":"Correo",
-                "contact_button": "Enviar"
+                "contact_button": "Enviar",
+                "text_work": "Es un placer que me contactes para trabajar juntos.",
+                "text_project": "Comparteme tu idea o proyecto y agendemos una reunión"
         }
 }

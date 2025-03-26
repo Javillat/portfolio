@@ -27,6 +27,8 @@
                 "contact_name":"Name",
                 "contact_phone":"Phone",
                 "contact_email":"Email",
-                "contact_button": "Send"
+                "contact_button": "Send",
+                "text_work": "I'd be happy to hear from you about working together.",
+                "text_project": "Share your idea or project with me and let's schedule a meeting."
         }
 }

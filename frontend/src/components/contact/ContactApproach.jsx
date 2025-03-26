@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ContactMessage from './ContactMessage';
-import work from '../../assets/icons/work.svg'
-import project from '../../assets/icons/project.svg'
+import work from '../../assets/img/work.svg'
+import project from '../../assets/img/project.svg'
 import './contact.css'
 
 export default function Contact() {
