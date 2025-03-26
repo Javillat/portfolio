@@ -16,11 +16,8 @@ export default function ContactMessage(props) {
     }
 
     return (
-        <section className="contact_container">
-            <div className="contact_container_header">
-                <h2>{message}</h2>
-            </div>
-            <div className="contact_container_body">
+        <section className="contact-container">
+            <div className="contact__container__body">
                 <div className="contact__container__body__form">
                     <form onSubmit={onSubmitForm} className='contact__container__body__form-form'>
                         <div className="contact__container__body__form__group">
@@ -45,6 +42,10 @@ export default function ContactMessage(props) {
                         </div>
                         <button type="submit" className='form-submit-btn'>{t("contact_button")}</button>
                     </form>
+                </div>
+                <div className="contact__container__body__text">
+                    <p>{message}</p>
+                    <p>{t("contact_message_right")}</p>
                 </div>
             </div>
         </section>

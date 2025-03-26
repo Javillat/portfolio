@@ -129,14 +129,14 @@
 @media screen and (max-width: 768px) {}
 
 
-.contact__container {
+/* .contact__container {
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 98vw;
     min-height: 100vh;
-    background-color: var(--night);
-}
+    background-color: var(--primary-black);
+} */
 
 .contact__container__header {
     position: relative;
@@ -155,23 +155,27 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: left;
     letter-spacing: 2px;
 }
 
 /* From Uiverse.io by omriluz */
 .contact__container__body__form {
-    width: 500px;
-    background: linear-gradient(var(--night), var(--night)) padding-box,
-        linear-gradient(145deg, transparent 35%, var(--emerald), #40c9ff) border-box;
+    width: 100%;
+    background: linear-gradient(var(--primary-black), var(--primary-black)) padding-box,
+        linear-gradient(145deg, transparent 35%, var(--electric-blue), var(--jade)) border-box;
     border: 2px solid transparent;
-    padding: 32px 24px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 26px 24px;
     font-size: 14px;
-    font-family: var(--ff);
-    color: white;
+    font-family: var(--text-font);
+    color: var(--secundary-text-white);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     box-sizing: border-box;
     border-radius: 16px;
     background-size: 200% 100%;
@@ -179,13 +183,22 @@
 }
 
 .contact__container__body__text {
-    font-size: 20px;
-    font-family: var(--ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: var(--base-font);
+    background: linear-gradient(90deg, var(--moonstone), var(--jade), var(--electric-blue));
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 6s linear infinite;
     margin: auto;
     padding: 50px;
     text-align: left;
     text-shadow: #717171;
-    color: var(--white);
 }
 
 .contact__container__body__text h1 {
@@ -235,7 +248,7 @@
 .contact__container__body__form .contact__container__body__form-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .contact__container__body__form .contact__container__body__form__group {
@@ -247,7 +260,7 @@
 .contact__container__body__form .contact__container__body__form__group label {
     display: block;
     margin-bottom: 5px;
-    color: var(--white);
+    color: var(--secundary-text-white);
     font-weight: 600;
     font-size: 16px;
 }
@@ -256,10 +269,10 @@
     /* width: 100%; */
     padding: 12px 16px;
     border-radius: 8px;
-    color: var(--white);
+    color: var(--secundary-text-white);
     font-family: inherit;
     background-color: transparent;
-    border: 1px solid var(--white);
+    border: 1px solid var(--secundary-text-white);
 }
 
 .contact__container__body__form .contact__container__body__form__group textarea {
@@ -267,9 +280,9 @@
     padding: 12px 16px;
     border-radius: 8px;
     resize: none;
-    color: var(--white);
+    color: var(--secundary-text-white);
     height: 96px;
-    border: 1px solid var(--white);
+    border: 1px solid var(--secundary-text-white);
     background-color: transparent;
     font-family: inherit;
     font-size: 16px;
@@ -281,12 +294,12 @@
 
 .contact__container__body__form .contact__container__body__form__group input:focus {
     outline: none;
-    border-color: var(--emerald);
+    border-color: var(--jade);
 }
 
 .contact__container__body__form .contact__container__body__form__group textarea:focus {
     outline: none;
-    border-color: var(--emerald);
+    border-color: var(--jade);
 }
 
 .contact__container__body__form .form-submit-btn {
@@ -295,7 +308,7 @@
     justify-content: center;
     align-self: flex-start;
     font-family: inherit;
-    color: var(--white);
+    color: var(--secundary-text-white);
     font-weight: 600;
     width: 40%;
     background: #313131;
@@ -309,6 +322,6 @@
 }
 
 .contact__container__body__form .form-submit-btn:hover {
-    background-color: var(--emerald);
-    border-color: #fff;
+    background-color: var(--jade);
+    border-color: var(--secundary-text-white);
 }
