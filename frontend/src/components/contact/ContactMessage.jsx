@@ -3,14 +3,12 @@ import { useTranslation } from "react-i18next";
 import blobWork from "../../assets/img/work.svg"
 import blobProject from "../../assets/img/project.svg"
 import back from "../../assets/img/back.svg"
-import { useNavigate } from "react-router-dom";
 
 export default function ContactMessage(props) {
-    const { work, project } = props;
-
-    const navigate = useNavigate();
 
     const { t } = useTranslation();
+
+    const { work, project, onBack } = props;
 
     const message = work
         ? t("text_work")
@@ -21,20 +19,15 @@ export default function ContactMessage(props) {
         alert('Form submitted');
     }
 
-    const handleBack = (event) => {
-        event.preventDefault();
-        navigate("/")
-    }
-
     return (
         <section className="contact-container">
             <div className="contact__container__body">
                 <div className="contact__container__body__text">
                     <div className="contact__container__header p-3">
-                        <img src={back} alt="Ir atrás" onClick={handleBack} />
+                        <img src={back} alt="Ir atrás" loading="lazy" onClick={onBack} />
                     </div>
                     <div className="contact__container__body__text-image">
-                        <img src={work ? blobWork : blobProject} alt="Blob" />
+                        <img src={work ? blobWork : blobProject} alt="Blob" loading="lazy" />
                     </div>
                     <h1>{message}</h1>
                 </div>

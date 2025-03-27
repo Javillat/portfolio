@@ -28,7 +28,7 @@ export default function Main() {
             <section className="section-resume-perfil">
                 <Whoami />
             </section>
-                <Technologies />
+            <Technologies />
             <section className="section-projects">
                 <Projects />
             </section>
@@ -39,7 +39,16 @@ export default function Main() {
             <section className="section-recommended">
                 <h1>Recommended</h1>
             </section> */}
-                <Contact />
+            <Contact />
+            <ul className="profile-blocks-appear">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <footer id="copyleft">Footer</footer>
         </main>
     );

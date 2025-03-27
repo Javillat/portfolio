@@ -49,8 +49,20 @@ export default function Contact() {
                     </div>
                 </div>
             )}
-            {showWorkContact && <ContactMessage work={showWorkContact} />}
-            {showProjectContact && <ContactMessage project={showProjectContact} />}
+            {showWorkContact && <ContactMessage
+                work={showWorkContact}
+                onBack={() => {
+                    setShowWorkContact(false);
+                    setShowProjectContact(false);
+                }}
+            />}
+            {showProjectContact && <ContactMessage
+                project={showProjectContact}
+                onBack={() => {
+                    setShowWorkContact(false);
+                    setShowProjectContact(false);
+                }}
+            />}
         </>
     );
 }
