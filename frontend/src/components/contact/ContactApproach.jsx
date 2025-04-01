@@ -21,7 +21,7 @@ export default function Contact() {
     return (
         <>
             {!showWorkContact && !showProjectContact && (
-                <div className='contact-container'>
+                <div className='section-contact contact-container'>
                     <div>
                         <h1 className="title">{t("approach_title")}</h1>
                     </div>

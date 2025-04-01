@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Added import for Link
-
 import { useTranslation } from "react-i18next";
 import profilePicture from "../../assets/img/profile.PNG";
 import window_code from "../../assets/img/window_code.png";
 import { BsChevronRight, BsDashLg } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss, FaJs, Fa } from "react-icons/fa";
 import star from "../../assets/icons/star.svg";
 import Resume from "../resume/Resume";
 

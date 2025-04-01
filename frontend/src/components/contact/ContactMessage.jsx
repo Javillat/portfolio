@@ -29,7 +29,7 @@ export default function ContactMessage(props) {
                     <div className="contact__container__body__text-image">
                         <img src={work ? blobWork : blobProject} alt="Blob" loading="lazy" />
                     </div>
-                    <h1>{message}</h1>
+                    <h1><r-text>{message}</r-text></h1>
                 </div>
                 <div className="contact__container__body__form">
                     <form onSubmit={onSubmitForm} className='contact__container__body__form-form'>

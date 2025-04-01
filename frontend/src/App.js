@@ -11,15 +11,8 @@ import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scroll/ScrollToTop.js";
 import Technologies from "./components/tech/Techs";
 import ContactApproach from "./components/contact/ContactApproach.jsx";
-import ContactMessage from "./components/contact/ContactMessage.jsx";
 
 function App() {
-
-  // window.onscroll = () => {
-  //   const header = document.querySelector(".App-header");
-  //   const sticky = header.offsetTop;
-  //   (window.pageYOffset > sticky) ? header.classList.add("sticky") : header.classList.remove("sticky");
-  // }
 
   return (
     <div className="app">
@@ -33,8 +26,9 @@ function App() {
           <Route path='resume' element={<Resume />} /> {/** Ruta hijo */}
           <Route path="projects" element={<Projects />} />{/** Ruta hijo */}
           <Route path="tech" element={<Technologies />} />
-          {/* <Route path="about" element={<About />} /> */}
           <Route path="contact" element={<ContactApproach />} />
+          {/* <Route path="about" element={<About />} /> */}
+          {/* <Route path="blog" element={<Blog />} /> */}
         </Route>
       </Routes>
     </div>
@@ -43,23 +37,3 @@ function App() {
 
 export default App;
 
-
-// Ejemplo de uso
-// const App = () => {
-//   return (
-//     <div className="app">
-//       <CustomCursor />
-//       <div className="content">
-//         <HoverableElement>
-//           <h1>Hello World</h1>
-//         </HoverableElement>
-//         <HoverableElement>
-//           <button>Hover Me</button>
-//         </HoverableElement>
-//         <HoverableElement>
-//           <p>This element has a hover effect</p>
-//         </HoverableElement>
-//       </div>
-//     </div>
-//   );
-// };
