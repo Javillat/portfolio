@@ -32,8 +32,9 @@ export default function Menu() {
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
                 <NavLink className={isActive} to='/tech'>{t('tech')}</NavLink>
-                <NavLink className={isActive} to='/blog'>Blog</NavLink>
                 <NavLink className={isActive} to='/contact'>{t('contact')}</NavLink>
+                <NavLink className={isActive} to='/blog'>Blog</NavLink>
+                {/* <NavLink className={isActive} to='/book'>{t('visitbook')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/#achievement'>{t('achievement')}</NavLink> */}
                 {/* <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink> */}
@@ -46,13 +47,13 @@ export default function Menu() {
                 <FormControl>
                     <FormControlLabel
                         labelPlacement={isChecked ? "end" : "start"}
-                        style={{ paddingLeft: '1.5em', fontFamily: 'var(--base-font)', color: 'var(--dark-blue)', fontSize: '1.5em' }}
-                        label={isChecked ? "es" : "en"}
+                        style={{ paddingLeft: '1.5em', fontFamily: 'var(--base-font)', color: 'var(--jade)', fontSize: '1.5em' }}
+                        label={isChecked ? "ES" : "EN"}
                         control={<Switch checked={isChecked} value={isChecked ? 'en' : 'es'} onChange={onChangeLang} defaultValue={'es'} inputProps={{
                             'aria-label': _LANGUAGES.map((lng) => {
                                 return lng.code
                             })
-                        }} size="medium" style={{ color: "var(--dark-blue)" }} />} />
+                        }} size="medium" style={{ color: "var(--jade)" }} />} />
                 </FormControl>
             </div>
             {/* color="warning" fontSize="large" sx={{ "&:hover": { color: "white" } }} /> */}
