@@ -11,6 +11,7 @@ import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scroll/ScrollToTop.js";
 import Technologies from "./components/tech/Techs";
 import ContactApproach from "./components/contact/ContactApproach.jsx";
+import ContactMessage from "./components/contact/ContactMessage.jsx";
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
           <Route path="projects" element={<Projects />} />{/** Ruta hijo */}
           <Route path="tech" element={<Technologies />} />
           <Route path="contact" element={<ContactApproach />} />
+          <Route path="contact/work" element={<ContactMessage work />} />
+          <Route path="contact/project" element={<ContactMessage project />} />
           {/* <Route path="about" element={<About />} /> */}
           {/* <Route path="blog" element={<Blog />} /> */}
         </Route>
