@@ -35,9 +35,7 @@ function App() {
           {/* <Route path="blog" element={<Blog />} /> */}
         </Route>
       </Routes>
-      <footer id="copyright" className="footer">
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

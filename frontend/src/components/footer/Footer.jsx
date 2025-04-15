@@ -2,17 +2,31 @@
 const Footer = () => {
     return (
         <div className="footer__container">
-            <div className="footer__container-right">
-                <p>&copy; 2025 Javier Villatoro. All rights reserved.</p>
-                <p>Designed and developed by Javier Villatoro</p>
+            <div className="footer__container-left">
+                <p>&copy; 2025 <span className="name-gradient">Javier Villatoro.</span> All rights reserved.</p>
+                <p>Designed and developed by <span className="name-gradient">Javier Villatoro</span></p>
             </div>
-            <div className="footer__container-links">
-                <a href="#top" className="scroll-to-top">Back to top</a>
-                <a href="#about" className="scroll-to-about">About</a>
-                <a href="#projects" className="scroll-to-projects">Projects</a>
-                <a href="#contact" className="scroll-to-contact">Contact</a>
-                <a href="#resume" className="scroll-to-resume">Resume</a>
-                <a href="#tech" className="scroll-to-tech">Tech</a>
+            <div className="footer__container-right">
+                <div className="footer__container-links__left">
+                    <a href="#top" className="scroll-to-top">Back to top</a>
+                    <a href="#resume" className="scroll-to-resume">Resume</a>
+                    <a href="#projects" className="scroll-to-projects">Projects</a>
+                    <a href="#tech" className="scroll-to-tech">Tech</a>
+                    <a href="#contact" className="scroll-to-contact">Contact</a>
+                </div>
+                <div className="footer__container-links__right">
+                    <p>Follow me on:</p>
+                    <a href="https://www.linkedin.com/in/javier-villatoro-/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" className="social-icon" />
+                    </a>
+                    <a href="https://github.com/javier-villatoro" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" className="social-icon" />
+                    </a>
+                    <a href="https://twitter.com/javier_villatoro" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" className="social-icon" />
+                    </a>
+
+                </div>
             </div>
         </div>
     );
