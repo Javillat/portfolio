@@ -12,6 +12,7 @@ import ScrollToTop from "./components/scroll/ScrollToTop.js";
 import Technologies from "./components/tech/Techs";
 import ContactApproach from "./components/contact/ContactApproach.jsx";
 import ContactMessage from "./components/contact/ContactMessage.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
 
@@ -34,6 +35,9 @@ function App() {
           {/* <Route path="blog" element={<Blog />} /> */}
         </Route>
       </Routes>
+      <footer id="copyright" className="footer">
+        <Footer />
+      </footer>
     </div>
   );
 }

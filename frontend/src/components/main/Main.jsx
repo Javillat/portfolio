@@ -49,7 +49,6 @@ export default function Main() {
                 <li></li>
                 <li></li>
             </ul>
-            <footer id="copyleft" className="footer">Footer</footer>
         </main>
     );
 }

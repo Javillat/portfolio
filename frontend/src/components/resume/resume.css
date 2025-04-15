@@ -4,7 +4,7 @@
 }
 .resume-back-text {
     width: 100vw;
-    background: linear-gradient(149deg, var(--primary-black), var(--dark-blue));
+    /* background: linear-gradient(149deg, var(--primary-black), var(--dark-blue)); */
 }
 
 .resume-text {

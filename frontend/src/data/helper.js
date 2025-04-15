@@ -197,14 +197,45 @@ export const statsWebShow = [
         icon: react,
     },
     {
-        title: "73 % de las empresas invierten en diseño para diferenciarse de la competencia.",
+        title: "El 73 % de las empresas invierten en diseño para diferenciarse de la competencia.",
         description: "Un diseño web único puede ayudar a tu marca a destacarse en un mercado saturado.",
         image: "https://i.imgur.com/8QKQq8P.png",
         icon: react,
     },
     {
-        title: "50 % de los consumidores creen que el diseño web es crucial para la marca.",
+        title: "Un 50 % de los consumidores creen que el diseño web es crucial para la marca.",
         description: "Un diseño web profesional puede aumentar la confianza de los usuarios en tu marca.",
+        image: "https://i.imgur.com/8QKQq8P.png",
+        icon: react,
+    },
+    {
+
+        title: "Las empresas que adoptan web apps reportan un incremento promedio del 30% en la eficiencia operativa, gracias a la accesibilidad y automatización de procesos.",
+        description: "Las web apps permiten a las empresas optimizar sus operaciones y mejorar la experiencia del cliente.",
+        image: "https://i.imgur.com/8QKQq8P.png",
+        icon: react,
+    },
+    {
+        title: "El 85% de los usuarios prefieren interactuar con empresas que ofrecen soluciones digitales como web apps.",
+        description: "Las web apps son una herramienta clave para mejorar la satisfacción del cliente y aumentar la lealtad a la marca.",
+        image: "https://i.imgur.com/8QKQq8P.png",
+        icon: react,
+    },
+    {
+        title: "Las web apps permiten llegar a una audiencia más amplia, ya que son accesibles desde cualquier dispositivo con conexión a internet, lo que aumenta el alcance de las empresas en un 40%.",
+        description: "Las web apps son una herramienta clave para mejorar la satisfacción del cliente y aumentar la lealtad a la marca.",
+        image: "https://i.imgur.com/8QKQq8P.png",
+        icon: react,
+    },
+    {
+        title: "Las empresas que implementan web apps pueden reducir costos de desarrollo y mantenimiento hasta en un 25%, en comparación con aplicaciones nativas.",
+        description: "Las web apps son una herramienta clave para mejorar la satisfacción del cliente y aumentar la lealtad a la marca.",
+        image: "https://i.imgur.com/8QKQq8P.png",
+        icon: react,
+    },
+    {
+        title: "Las web apps bien diseñadas pueden aumentar la interacción del cliente en un 50 %, mejorando la fidelidad y la experiencia del usuario.",
+        description: "Las web apps son una herramienta clave para mejorar la satisfacción del cliente y aumentar la lealtad a la marca.",
         image: "https://i.imgur.com/8QKQq8P.png",
         icon: react,
     }

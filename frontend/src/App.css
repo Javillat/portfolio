@@ -31,7 +31,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-dark-gray);
-  background: linear-gradient(90deg, var(--dark-blue), var(--moonstone));
+  /* background: linear-gradient(90deg, var(--dark-blue), var(--moonstone)); */
+  background: linear-gradient(90deg, var(--primary-black), var(--dark-blue));
   cursor: none;
   margin: 0;
   padding: 0;
@@ -448,4 +449,27 @@ select,
     align-items: center;
     border-radius: 50px;
   } */
+}
+
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.footer__container-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
 }
