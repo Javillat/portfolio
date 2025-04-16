@@ -7,12 +7,17 @@ const Footer = () => {
                 <p>Designed and developed by <span className="name-gradient">Javier Villatoro</span></p>
             </div>
             <div className="footer__container-right">
+                <div className="footer__container-right__blogs">
+                    <h2>Blog</h2>
+                    <p>Check out my blog for the latest updates and articles.</p>
+                    <a href="https://javiervillatoro.dev/blog" target="_blank" rel="noopener noreferrer">Visit Blog</a>
+                </div>
                 <div className="footer__container-links__left">
-                    <a href="#top" className="scroll-to-top">Back to top</a>
-                    <a href="#resume" className="scroll-to-resume">Resume</a>
-                    <a href="#projects" className="scroll-to-projects">Projects</a>
-                    <a href="#tech" className="scroll-to-tech">Tech</a>
-                    <a href="#contact" className="scroll-to-contact">Contact</a>
+                    <a href="#top">Back to top</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#tech">Tech</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div className="footer__container-links__right">
                     <p>Follow me on:</p>
