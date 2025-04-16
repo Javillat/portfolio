@@ -1,4 +1,3 @@
-
 import { skills } from "../../data/helper";
 import { VscChevronLeft } from "react-icons/vsc";
 import { VscChevronRight } from "react-icons/vsc";
@@ -19,22 +18,34 @@ const Technologies = () => {
     }
 
     return (
-        <section id="tech" className="section-tech skills-container">
-            <div className="skills-container-title">
-                <h1 style={{ color: "var(--white)" }}><VscChevronLeft style={chebronConfig} /> My Tech <span>stack</span> <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} /></h1>
-                <h2 className="pt-3"> I'm constantly learning, acquiring new knowledge, and improving myself. </h2>
-            </div>
+        <section id="tech" className="section-tech skills-container" aria-labelledby="tech-title">
+            <header className="skills-container-title">
+                <h1 id="tech-title" style={{ color: "var(--white)" }}>
+                    <VscChevronLeft style={chebronConfig} /> My Tech <span>Stack</span> <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} />
+                </h1>
+                <h2 className="pt-3">I'm constantly learning, acquiring new knowledge, and improving myself.</h2>
+            </header>
             <div className="skills-container-skills">
                 {
                     skills.map((skill, index) => {
                         return (
-                            <button key={index} type="button" className="btn">
-                                <img src={skill.icon} alt={skill.name} className="icon-img" />
+                            <button 
+                                key={index} 
+                                type="button" 
+                                className="btn" 
+                                aria-label={`Skill: ${skill.name}`}
+                                title={`Learn more about ${skill.name}`}
+                            >
+                                <img 
+                                    src={skill.icon} 
+                                    alt={`${skill.name} icon`} 
+                                    className="icon-img" 
+                                    loading="lazy" 
+                                />
                                 <strong><span>{skill.name}</span></strong>
                             </button>
                         )
-                    }
-                    )
+                    })
                 }
             </div>
         </section>
