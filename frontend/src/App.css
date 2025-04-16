@@ -496,3 +496,12 @@ select,
   }
 }
 
+.footer__container-right h1 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.footer__container-right h2 {
+  font-size: .9rem;
+  margin-bottom: 0.5rem;
+  color: gray;
+}
