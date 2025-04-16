@@ -1,9 +1,16 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+
 const Footer = () => {
+
+    const { t } = useTranslation();
+
     return (
         <footer className="footer__container">
             <div className="footer__container-left">
-                <p><span className="name-gradient">&copy;</span> 2025 <span className="name-gradient">Javier Villatoro.</span> All rights reserved.</p>
-                <p>Designed and developed by <span className="name-gradient">Javier Villatoro</span></p>
+                <p><span className="name-gradient">&copy;</span> 2025 <span className="name-gradient">Javier Villatoro.</span> {t('footer_rights')}</p>
+                <p>{t('footer_credits')} <span className="name-gradient">Javier Villatoro</span></p>
             </div>
             <div className="footer__container-right">
                 <div className="footer__container-right__blogs">
@@ -13,28 +20,28 @@ const Footer = () => {
                         rel="noopener noreferrer" 
                         title="Visit Javier Villatoro's Blog"
                     >
-                        <h1>Visit Blog</h1>
+                        <h1>{t('footer_blog_link')}</h1>
                     </a>
-                    <h2 className="gray-text">Check out my blog for the latest updates and articles.</h2>
+                    <h2 className="gray-text">{t('footer_blog')}</h2>
                     <a 
                         href="https://www.javiervillatoro.dev/insights" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         title="View Javier Villatoro's Insights"
                     >
-                        <h1>View Insights</h1>
+                        <h1>{t('footer_insight_link')}</h1>
                     </a>
-                    <h2 className="gray-text">Explore my insights and thoughts on various topics.</h2>
+                    <h2 className="gray-text">{t('footer_insight')}</h2>
                 </div>
                 <div className="footer__container-links__left">
-                    <a href="#top" title="Back to top of the page">Back to top</a>
-                    <a href="#resume" title="View Resume section">Resume</a>
-                    <a href="#projects" title="View Projects section">Projects</a>
-                    <a href="#tech" title="View Tech section">Tech</a>
-                    <a href="#contact" title="View Contact section">Contact</a>
+                    <a href="#top" title="Back to top of the page">{t('footer_links_top')}</a>
+                    <a href="#resume" title="View Resume section">{t('footer_links_resume')}</a>
+                    <a href="#projects" title="View Projects section">{t('footer_links_projects')}</a>
+                    <a href="#tech" title="View Tech section">{t('footer_links_tech')}</a>
+                    <a href="#contact" title="View Contact section">{t('footer_links_contact')}</a>
                 </div>
                 <div className="footer__container-links__right">
-                    <p>Follow me on:</p>
+                    <p>{t('footer_links_social')}:</p>
                     <a 
                         href="https://www.linkedin.com/in/javillatoro-full-stack/" 
                         target="_blank" 

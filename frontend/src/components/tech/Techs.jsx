@@ -3,9 +3,12 @@ import { VscChevronLeft } from "react-icons/vsc";
 import { VscChevronRight } from "react-icons/vsc";
 import { RxSlash } from "react-icons/rx";
 import './tech.css';
+import { useTranslation } from "react-i18next";
 
 const Technologies = () => {
 
+    const { t } = useTranslation();
+    
     const chebronConfig = {
         color: "var(--jade)",
         size: "2em",
@@ -21,9 +24,9 @@ const Technologies = () => {
         <section id="tech" className="section-tech skills-container" aria-labelledby="tech-title">
             <header className="skills-container-title">
                 <h1 id="tech-title" style={{ color: "var(--white)" }}>
-                    <VscChevronLeft style={chebronConfig} /> My Tech <span>Stack</span> <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} />
+                    <VscChevronLeft style={chebronConfig} /> {t('tech_title')} <RxSlash style={slashConfig} /><VscChevronRight style={chebronConfig} />
                 </h1>
-                <h2 className="pt-3">I'm constantly learning, acquiring new knowledge, and improving myself.</h2>
+                <h2 className="pt-3">{t('tech_subtitle')}</h2>
             </header>
             <div className="skills-container-skills">
                 {

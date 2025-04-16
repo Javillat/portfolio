@@ -16,6 +16,8 @@
                 "whoami": "Quién soy",
                 "resumetext": "Soy un desarrollador full-stack impulsado por una pasión inquebrantable por la innovación. Mi hogar, es el dinámico universo del desarrollo web, transformo desafíos en oportunidades y código en experiencias cautivadoras. Constantemente en evolución y siempre listo para abrazar el próximo gran reto tecnológico que expanda mis horizontes.",
                 "resumetextsecond": "Fucionar back-end y front-end, proveer soluciones, rápidas y practicas, fuertes, diseñadas sobre las ideas y necesidades del cliente y sus objetivos, optimizadas para ser escalables!",
+                "tech_title": "Mi stack tecnológico",
+                "tech_subtitle": "Estoy en constante aprendizaje, adquiriendo nuevos conocimientos y mejorando.",
                 "approach_title": "Contactar",
                 "approach_subtitle_work": "¿Quieres que hablemos sobre trabajar juntos?",
                 "approach_subtitle_project": "¿Tienes un proyecto/idea y necesitas ayuda?",
@@ -29,6 +31,18 @@
                 "contact_email":"Correo",
                 "contact_button": "Enviar",
                 "text_work": "Es un placer que me contactes para trabajar juntos.",
-                "text_project": "Comparteme tu idea o proyecto y agendemos una reunión"
+                "text_project": "Comparteme tu idea o proyecto y agendemos una reunión",
+                "footer_rights": "Todos los derechos reservados",
+                "footer_credits": "Diseñado y desarrollado por",
+                "footer_blog_link": "Visitar Blog",
+                "footer_blog": "Visita mi blog para las últimas actualizaciones y artículos.",
+                "footer_insight_link": "Ver Insights",
+                "footer_insight": "Explora mis ideas y pensamientos sobre varios temas.",
+                "footer_links_top": "Ir arriba",
+                "footer_links_resume": "Resúmen",
+                "footer_links_projects": "Proyectos",
+                "footer_links_tech": "Technologías",
+                "footer_links_contact": "Contacto",
+                "footer_links_social": "Sígueme en"
         }
 }
