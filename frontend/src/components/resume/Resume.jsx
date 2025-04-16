@@ -41,7 +41,7 @@ export default function Resume() {
     }, []);
 
     return (
-        <section className="section-resume resume-back-text">
+        <section id="resume" className="section-resume resume-back-text">
             <div className="resume-text" ref={containerRef}>
                 <p>{splitWords}</p>
             </div>

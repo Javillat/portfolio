@@ -447,7 +447,7 @@ select,
 .footer__container-right a {
   display: flex;
   flex-direction: column;
-  color: var(--secundary-mint-neon);
+  color: var(--secundary-text-white);
   text-decoration: none;
   /* text-align: left; */
 }
@@ -456,7 +456,7 @@ select,
   text-decoration: none;
   transform: scale(1.1);
   transition: all 0.3s ease;
-  color: var(--primary-text-dark-gray);
+  /* color: var(--secundary-text-white); */
   filter: drop-shadow(0 0 2px var(--secundary-text-white));
 }
 
@@ -471,6 +471,28 @@ select,
 
 .footer__container-links__right a {
   width: 25% ;
+}
 
+.name-gradient {
+  background: linear-gradient(90deg, var(--secundary-mint-neon), var(--electric-blue), var(--secundary-mint-neon));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: name-gradient 3s alternate infinite;
+}
+
+@keyframes name-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
