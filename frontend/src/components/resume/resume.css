@@ -16,6 +16,10 @@
     /* background-image: linear-gradient(-45deg, var(--moonstone) 50%, var(--electric-blue) 50%); *Division pantalla en 2 colores al 50% en diagonal */
 }
 
+.fs-color {
+    color: var(--electric-blue);
+}
+
 .resume-text p {
     max-width: 85%;
     margin: auto;

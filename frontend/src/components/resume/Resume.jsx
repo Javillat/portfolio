@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { gsap } from "gsap";
@@ -30,11 +29,14 @@ export default function Resume() {
             }
         });
 
-        words.forEach((word, i) => {
+        const keywords = ['desarrollador ','full-stack ','developer '];
+
+        words.forEach((word) => {
+            const isKeyword = keywords.includes(word.textContent);
             tl.to(word, {
-                color: "#eee",
+                color: isKeyword ? 'var(--jade)' : '#eee',
                 duration: 0.5
-            }, i * 0.1);
+            });
         });
 
         return () => tl.kill();
