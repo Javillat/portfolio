@@ -49,7 +49,8 @@ export default function Menu() {
                 {/*<button onClick={()=>{setSelected(!selected)}}>{selected?'Hide':'Show'}Menu<*/}
                 <FormControl>
                     <FormControlLabel
-                        labelPlacement={isChecked ? "end" : "start"}
+                        labelPlacement={"start"}
+                        // isChecked ? "end" : "start"
                         style={{ paddingLeft: '1.5em', fontFamily: 'var(--base-font)', color: 'var(--jade)', fontSize: '1.5em' }}
                         label={isChecked ? "ES" : "EN"}
                         control={<Switch checked={isChecked} value={isChecked ? 'en' : 'es'} onChange={onChangeLang} defaultValue={'es'} inputProps={{
