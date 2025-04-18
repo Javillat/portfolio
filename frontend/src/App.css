@@ -31,7 +31,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-dark-gray);
-  /* background: linear-gradient(90deg, var(--dark-blue), var(--moonstone)); */
   background: linear-gradient(90deg, var(--primary-black), var(--dark-blue));
   cursor: none;
   margin: 0;
@@ -160,9 +159,6 @@ select,
   transition: all 0.3s ease;
 }
 
-.hovered {
-  color: #e74c3c;
-}
 
 /* Fin cursor cola */
 
@@ -327,14 +323,14 @@ select,
     opacity: 0;
     border-radius: 50%;
   }
-  
+
 }
 
 
 /* Media queryes */
 
 @media (max-width: 1280px) {
-  .App-header {
+  /* .App-header {
     max-width: 90%;
     max-height: 8%;
     padding: .58rem;
@@ -345,7 +341,7 @@ select,
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
-  }
+  } */
 }
 
 @media (max-width: 1024px) {
@@ -364,19 +360,176 @@ select,
 }
 
 @media (max-width: 768px) {
-  /* .App-header {
-    max-width: 90%;
+
+  /* Inicio header */
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
     max-height: 8%;
-    padding: .58rem;
+    padding: 0.5rem;
+    position: fixed;
+    border-radius: 0%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  nav {
     display: flex;
     position: fixed;
     top: 15px;
-    z-index: 1;
-    justify-content: space-between;
+    right: 15px;
+    z-index: 10;
+    width: 10vw;
+    height: 10vw;
+    justify-content: center !important;
     align-items: center;
-    border-radius: 50px;
+    background-color: var(--primary-black);
+    border: 2px solid var(--secundary-mint-neon);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  nav span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secundary-text-white);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+
+  nav.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  nav.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  nav.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: var(--primary-black);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    z-index: 9;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    color: var(--secundary-text-white);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu a:hover {
+    background-color: var(--secundary-mint-neon);
+    color: var(--primary-black);
+  }
+
+  /* .sticky {
+    display: none;
   } */
+
+  .logo-brand {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+  }
+
+  div #language {
+    position: fixed;
+    top: 15px;
+    left: calc((100vw / 2) - 50px);
+    width: fit-content;
+    height: max-content;
+    padding-right: 5px;
+  }
+
+  /* Fin header */
+  /* Inicio cursor */
+  .cursor {
+    display: none;
+  }
+
+  .cursor__ball {
+    display: none;
+  }
+
+  .cursor__ball--big {
+    display: none;
+  }
+
+  .cursor__ball--small {
+    display: none;
+  }
+
+  /* Fin cursor */
+
+  /* Inicio iconos laterales */
+  aside {
+    display: none;
+  }
+
+  /* Fin iconos laterales */
+  section {
+    margin: 0;
+  }
+
+  .section-resume-perfil {
+    width: 100%;
+  }
+
+  .section-resume-perfil.whoami-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-resume-perfil.whoami-superior.whoami-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-resume-perfil.whoami-superior.whoami-container>* {
+    width: 100%;
+  }
+
+  .section-resume-perfil.whoami-superior.whoami-container.whoami-item.profile-picture {}
+
 }
+
+
 
 @media (max-width: 480px) {
   /* .App-header {
@@ -470,7 +623,7 @@ select,
 }
 
 .footer__container-links__right a {
-  width: 25% ;
+  width: 25%;
 }
 
 .name-gradient {
@@ -500,6 +653,7 @@ select,
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
+
 .footer__container-right h2 {
   font-size: .9rem;
   margin-bottom: 0.5rem;

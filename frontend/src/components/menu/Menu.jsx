@@ -24,10 +24,25 @@ export default function Menu() {
         i18n.changeLanguage(lang_code)
     }
 
+    const onClickMenuToggle = () => {
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+        if (menuToggle.classList.contains('active')) {
+            menuToggle.classList.remove('active');
+            menu.classList.remove('active');
+        } else {
+            menuToggle.classList.add('active');
+            menu.classList.add('active');
+        }
+    }
+
     return (
-        <nav>
+        <nav id="menu" onClick={onClickMenuToggle}>
             <Brand />
-            <div className="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="menuToggle" className="menu">
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>

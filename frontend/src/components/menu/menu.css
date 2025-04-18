@@ -2,7 +2,6 @@ nav {
     display: flex;
     padding: 10px;
     justify-content: space-between;
-    width: 100%;
 }
 
 nav div a {
@@ -14,14 +13,11 @@ nav div a {
     letter-spacing: 0.02rem;
     font-size: 15px;
     font-weight: 500;
-    /* text-transform: uppercase; */
 }
 
 a.active {
     color: var(--secundary-mint-neon);
     border-bottom: 2px solid var(--moonstone);
-
-    /* text-decoration: cadetblue; */
 }
 
 
@@ -34,8 +30,6 @@ a.active {
 }
 
 .menu {
-    display: flex;
+    margin: auto;
     align-items: center;
-    justify-content: space-between;
-    /* margin: auto; */
 }
