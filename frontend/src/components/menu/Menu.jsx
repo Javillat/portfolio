@@ -30,7 +30,7 @@ export default function Menu() {
     }
 
     return (
-        <nav id="menu" onClick={onClickMenuToggle} className={`isMenuActive ? 'active' : ''`}>
+        <nav id="menu" onClick={onClickMenuToggle} className={` ${isMenuActive ? 'active' : ''}`}>
             <Brand />
             <div className="menu-dash"></div>
             <div className="menu-dash"></div>
