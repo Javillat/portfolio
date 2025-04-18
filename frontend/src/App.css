@@ -395,7 +395,7 @@ select,
     cursor: pointer;
   }
 
-  nav span {
+  nav .menu-dash {
     width: 25px;
     height: 3px;
     background-color: var(--secundary-text-white);
@@ -403,15 +403,15 @@ select,
     transition: all 0.3s ease;
   }
 
-  nav.active span:nth-child(1) {
+  nav.active .menu-dash:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
 
-  nav.active span:nth-child(2) {
+  nav.active .menu-dash:nth-child(2) {
     opacity: 0;
   }
 
-  nav.active span:nth-child(3) {
+  nav.active .menu-dash:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
@@ -484,7 +484,6 @@ select,
   .cursor__ball--small {
     display: none;
   }
-
   /* Fin cursor */
 
   /* Inicio iconos laterales */

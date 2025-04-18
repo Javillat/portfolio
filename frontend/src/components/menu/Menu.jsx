@@ -16,6 +16,7 @@ export default function Menu() {
 
     //const [selected, setSelected] = useState(false);
     const [isChecked, setChecked] = useState(true);
+    const [isMenuActive, setMenuActive] = useState(false);
 
     const onChangeLang = (event) => {
         setChecked(event.target.checked);
@@ -25,36 +26,23 @@ export default function Menu() {
     }
 
     const onClickMenuToggle = () => {
-        const menuToggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('menu');
-        if (menuToggle.classList.contains('active')) {
-            menuToggle.classList.remove('active');
-            menu.classList.remove('active');
-        } else {
-            menuToggle.classList.add('active');
-            menu.classList.add('active');
-        }
+        setMenuActive((prev) => !prev);
     }
 
     return (
-        <nav id="menu" onClick={onClickMenuToggle}>
+        <nav id="menu" onClick={onClickMenuToggle} className={`isMenuActive ? 'active' : ''`}>
             <Brand />
-            <span></span>
-            <span></span>
-            <span></span>
-            <div id="menuToggle" className="menu">
+            <div className="menu-dash"></div>
+            <div className="menu-dash"></div>
+            <div className="menu-dash"></div>
+            <div id="menuToggle" className={`menu ${isMenuActive ? 'active' : ''}`} onClick={onClickMenuToggle}>
                 <NavLink className={isActive} to='/'>{t('home')}</NavLink>
                 <NavLink className={isActive} to='/resume'>{t('resume')}</NavLink>
                 <NavLink className={isActive} to='/projects'>{t('projects')}</NavLink>
                 <NavLink className={isActive} to='/tech'>{t('tech')}</NavLink>
                 <NavLink className={isActive} to='/contact'>{t('contact')}</NavLink>
-                <NavLink className={isActive} to='/blog'>Blog</NavLink>
-                {/* <NavLink className={isActive} to='/book'>{t('visitbook')}</NavLink> */}
-                {/* <NavLink className={isActive} to='/achievement'>{t('achievement')}</NavLink> */}
-                {/* <NavLink className={isActive} to='/#achievement'>{t('achievement')}</NavLink> */}
-                {/* <NavLink className={isActive} to='/certificate'>{t('certificate')}</NavLink> */}
-                {/* <NavLink className={isActive} to='/recommended'>{t('recommend')}</NavLink> */}
-                {/* <NavLink className={isActive} to='/about'>{t('about')}</NavLink> */}
+                {/* <NavLink className={isActive} to='/blog'>Blog</NavLink> */}
+                {/* <NavLink className={isActive} to='/insights'>insights</NavLink> */}
             </div>
             <div id="language">
                 {/* {isChecked ? "ES" : "EN"} */}
