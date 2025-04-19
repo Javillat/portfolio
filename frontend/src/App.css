@@ -517,7 +517,7 @@ select,
     margin: 0;
   }
 
-  .whoami-container {
+  .whoami-superior .whoami-container {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -531,8 +531,8 @@ select,
     width: 100%;
   }
 
-  .whoami-item:nth-child(1).whoami-item.profile-picture {
-    position: absolute;
+  .whoami-item:nth-child(1).whoami-item .profile-picture {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -545,8 +545,8 @@ select,
     background-position: center center;
   }
 
-  .whoami-item:nth-child(1).whoami-item.profile-picture #sw-js-blob-svg {
-    position: relative;
+  .whoami-item:nth-child(1).whoami-item .profile-picture #sw-js-blob-svg {
+    position: absolute;
     top: -15px;
     left: 90px;
     width: 95%;
@@ -565,8 +565,8 @@ select,
   }
 
   .whoami-container .profile-picture-code {
-    top: 40%;
     position: absolute;
+    top: 40%;
     left: 54%;
     display: flex;
     justify-content: center;
@@ -574,6 +574,37 @@ select,
     width: 65%;
     z-index: 0;
   }
+
+  .whoami-container .whoami-item:nth-child(2) {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    height: auto;
+    flex-grow: unset;
+    padding: 0;
+  }
+
+  /* Inicia footer */
+  .footer__container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* position: fixed; */
+    background-color: var(--primary-black);
+    color: var(--secundary-text-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+/* Finaliza footer */
+  
 
 
 }
