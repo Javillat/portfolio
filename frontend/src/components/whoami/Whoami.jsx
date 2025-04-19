@@ -59,7 +59,6 @@ export default function Whoami() {
             <button type="button" className="cta-button-talk">
               <Link to="project">Hablemos de tu proyecto</Link>
             </button>
-
           </div>
         </div>
         <div className="profile-picture-code">

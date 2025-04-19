@@ -387,15 +387,15 @@
     }
 }
 
-.profile-blocks-appear {
+/* .profile-blocks-appear {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 80%;
     z-index: 0  ;
-    /* overflow: hidden; */
-}
+    overflow: hidden; 
+} */
 
 .profile-blocks-appear li {
     position: absolute;
