@@ -217,47 +217,6 @@
     max-width: fit-content;
 }
 
-.whoami-container .typewriter h1 {
-    width: fit-content;
-    text-align: left;
-    padding-left: 100px;
-    font-family: 'The Nautigal';
-    font-size: 65px;
-    font-weight: 800;
-    color: var(--secundary-mint-neon);
-    overflow: hidden;
-    border-right: .13em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: -.01em;
-    animation:
-        typing 3.5s steps(28, end),
-        blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: var(--secundary-mint-neon)
-    }
-}
 
 .fullstack {
     display: flex;
