@@ -719,6 +719,25 @@ select,
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   }
 
+  .section-tech.skills-container {
+    padding: 10px;
+    padding-top: 3.5rem;
+  }
+
+  .section-tech.skills-container .skills-container-title h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-tech.skills-container .skills-container-skills {
+    width: 100%;
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    gap: 20px;
+  }
+
   main .profile-blocks-appear {
     position: absolute;
     top: 0;
