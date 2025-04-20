@@ -738,6 +738,30 @@ select,
     gap: 20px;
   }
 
+  .section-contact.contact-container {
+    gap: 20px;
+  }
+  .section-contact.contact-container .approach-glass-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .approach-glass-dark-container .approach-glass-twin-answer-container {
+    width: 50%;
+    height: 25vh;
+    min-height: auto;
+    font-size: calc(12px + 0.7vw);
+    gap: 10px;
+  }
+
+  .approach-glass-twin-answer-container .approach-glass-twin-answer-button-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px 15px;
+  }
+
   main .profile-blocks-appear {
     position: absolute;
     top: 0;
