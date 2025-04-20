@@ -636,6 +636,21 @@ select,
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   }
 
+  .whoami-superior .section-resume.resume-back-text .resume-text {
+    max-width: 95vw;
+    margin: auto;
+    padding: 10px 5px;
+  }
+
+  .whoami-superior .section-resume.resume-back-text .resume-text p {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: var(--text-font);
+    color: #111;
+    font-size: clamp(18px, 6vw, 48px);
+  }
+
 
 
   .whoami-item:nth-child(2).whoami-text .profile-resume {
