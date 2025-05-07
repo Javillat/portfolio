@@ -1,6 +1,6 @@
 
-module.exports = (sequelize, DataTypes) => {
-    const Category = sequelize.define('Categories', {
+model.exports = (sequelize, DataTypes) => {
+    const Tags = sequelize.define('Tags', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -16,15 +16,9 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             unique: true,
         },
-        description: {
-            type: DataTypes.TEXT,
-            allowNull: true,
-        },
     }, {
         freezeTableName: true,
     });
-    Category.associate = (models) => {
-        Category.hasMany(models.Post, { foreignKey: 'categoryId' });
-    };
-    return Category;
+
+    return Tags;
 };
