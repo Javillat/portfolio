@@ -1,11 +1,11 @@
-const express = require ("express");
-const cookieParser = require("cookie-parser");
-const bodyParser = require("body-parser");
-const morgan = require("morgan");
+import express from "express";
+import cookieParser from "cookie-parser";
+import bodyParser from "body-parser";
+import morgan from "morgan";
 // const route = require("./route/index.js");
 
 const server = express();
-server.name = "backend";
+// server.name = "backend";
 
 server.use(bodyParser.urlencoded({ extended:true, limit:"50mb" }));
 server.use(bodyParser.json({ limit: "50mb"}));
@@ -31,4 +31,4 @@ server.use((err, request, response, next) => {
     response.status(status).send(message);
 });
 
-module.exports = server;
+export default server;
