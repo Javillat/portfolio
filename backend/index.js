@@ -1,9 +1,9 @@
-const server = require("./src/app.js"),
-  path = require("path"),
-  puerto = 3001;
+const server = require("./src/app.js")
+  path = require("path")
+  const { port } = process.env || 3001;
 
-server.listen(puerto, (err) => {
+server.listen(port, (err) => {
   err
-    ? console.log("Error en el puerto ", puerto)
-    : console.log("Escuchando en puerto ", "http://localhost:3001");
+    ? console.log("Error en el puerto", port)
+    : console.log("Escuchando en puerto", port);
 });

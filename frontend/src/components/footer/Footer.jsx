@@ -43,7 +43,7 @@ const Footer = () => {
                 <div className="footer__container-links__right">
                     <p>{t('footer_links_social')}:</p>
                     <a 
-                        href="https://www.linkedin.com/in/javillatoro-full-stack/" 
+                        href="https://www.linkedin.com/in/javier-full-stack/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         aria-label="LinkedIn Profile"

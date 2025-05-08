@@ -2,7 +2,7 @@ const express = require ("express");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const route = require("./route/index.js");
+// const route = require("./route/index.js");
 
 const server = express();
 server.name = "backend";
@@ -23,7 +23,7 @@ server.use((request, response, next) => {
     return next();
 });
 
-server.use("/", route);
+// server.use("/", route);
 server.use((err, request, response, next) => {
     const status = err.status || 500;
     const message = err.message || err;
