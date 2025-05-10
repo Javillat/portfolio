@@ -1,5 +1,5 @@
 
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
     const PostCategory = sequelize.define('PostCategory', {
         post_id: {
             type: DataTypes.INTEGER,
@@ -16,8 +16,8 @@ module.exports = (sequelize, DataTypes) => {
     });
 
     PostCategory.associate = (models) => {
-        PostCategory.belongsTo(models.Post, { foreignKey: 'post_id' });
-        PostCategory.belongsTo(models.Category, { foreignKey: 'category_id' });
+        PostCategory.belongsTo(models.Posts, { foreignKey: 'post_id' });
+        PostCategory.belongsTo(models.Categories, { foreignKey: 'category_id' });
     };
 
     return PostCategory;

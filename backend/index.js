@@ -3,7 +3,7 @@ import { sequelize } from './src/dbpool.js';
 
 const port = process.env.PORT || 3001;
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   console.log("Base de datos conectada");
   server.listen(port, (err) => {
     err

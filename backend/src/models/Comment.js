@@ -1,5 +1,5 @@
 
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
     const Comment = sequelize.define('Comments', {
         id: {
             type: DataTypes.INTEGER,
@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
         freezeTableName: true,
     });
     Comment.associate = (models) => {
-        Comment.belongsTo(models.Post, { foreignKey: 'post_id' });
+        Comment.belongsTo(models.Posts, { foreignKey: 'post_id' });
         Comment.belongsTo(models.User, { foreignKey: 'user_id' });
         Comment.belongsTo(Comment, { foreignKey: 'parent_id', as: 'parentComment' });
         Comment.hasMany(Comment, { foreignKey: 'parent_id', as: 'replies' });

@@ -1,5 +1,5 @@
 
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
     const PostTags = sequelize.define('PostTags', {
         post_id: {
             type: DataTypes.INTEGER,
@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         freezeTableName: true,
     });
     PostTags.associate = (models) => {
-        PostTags.belongsTo(models.Post, { foreignKey: 'post_id' });
+        PostTags.belongsTo(models.Posts, { foreignKey: 'post_id' });
         PostTags.belongsTo(models.Tags, { foreignKey: 'tag_id' });
     };
     return PostTags;
