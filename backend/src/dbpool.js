@@ -18,7 +18,6 @@ export const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
 const models = {};
 const modelsPath = path.join(__dirname, 'models');
 
-// Cargar modelos dinámicamente usando import()
 const loadModels = async () => {
   const files = fs.readdirSync(modelsPath)
     .filter((file) => file.indexOf('.') !== 0 && file.slice(-3) === '.js');
@@ -29,7 +28,6 @@ const loadModels = async () => {
     models[model.name] = model;
   }
 
-  // Configurar asociaciones si existen
   Object.keys(models).forEach((modelName) => {
     if (models[modelName].associate) {
       models[modelName].associate(models);
@@ -43,7 +41,7 @@ const loadModels = async () => {
 try {
   await sequelize.authenticate();
   console.log('Connection has been established successfully.');
-  await loadModels(); // Cargar los modelos después de autenticar
+  await loadModels();
 } catch (error) {
   console.error('Unable to connect to the database:', error);
 }

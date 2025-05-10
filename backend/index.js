@@ -11,5 +11,5 @@ sequelize.sync({ force: true }).then(() => {
       : console.log("Escuchando en puerto", port);
   });
 }).catch((err) => {
-  console.log("Error en la base de datos", err);
+  console.log("Error en la configuración interna", err);
 });
