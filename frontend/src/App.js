@@ -14,7 +14,7 @@ const Resume = lazy(() => import("./components/resume/Resume"));
 const Technologies = lazy(() => import("./components/tech/Techs"));
 const ContactApproach = lazy(() => import("./components/contact/ContactApproach.jsx"));
 const ContactMessage = lazy(() => import("./components/contact/ContactMessage.jsx"));
-const Blog = lazy(() => import('./blog/Blog.jsx'));
+const Blog = lazy(() => import('./blog/pages/Blog.jsx'));
 const Projects = lazy(() => import("./components/projects/Projects"));
 
 function App() {
