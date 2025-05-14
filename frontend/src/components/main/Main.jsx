@@ -1,7 +1,6 @@
 import Whoami from "../whoami/Whoami";
 import Projects from "../projects/Projects";
 import Technologies from "../tech/Techs";
-import Achievement from "../achievement/Achievement";
 import Contact from "../contact/ContactApproach";
 import SocialNetworkContact from "../socialnetworkcontact/SocialNetworkContact";
 import NavigationButton from "../nav/Navigation";

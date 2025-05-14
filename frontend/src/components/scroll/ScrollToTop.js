@@ -15,7 +15,9 @@ const ScrollToTop = () => {
         "achievement": ".section-achievement",
         "certificate": ".section-certificate",
         "recommended": ".section-recommended",
-        about: "section-about"
+        "about": "section-about",
+        "blog": "blog",
+        "insights": ".section-insights",
     }), []);
 
     const [pixele, setPixele] = useState(0)
@@ -24,6 +26,7 @@ const ScrollToTop = () => {
         const clave = (pathname === '/') ? pathname : pathname.slice(1, pathname.length);
         const clase = getnameclass[clave];
         const contenedor = document.querySelector(clase);
+        if (!contenedor) return;
         const rect = contenedor.getBoundingClientRect();
         setPixele(rect.top + window.scrollY);
         window.scrollTo(

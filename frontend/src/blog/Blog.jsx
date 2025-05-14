@@ -1,10 +1,17 @@
 
+import React from 'react';
+import '../styles/global.css';
+import '../styles/blog.css';
+
 const Blog = () => { 
+    console.log("Blog component loaded");
+    // alert("Blog component loaded");
+    
   return (
-    <div>
+    <section className="blog">
       <h1>Blog</h1>
       <p>Bienvenido al blog!</p>
-    </div>
+    </section>
   );
 }
 
