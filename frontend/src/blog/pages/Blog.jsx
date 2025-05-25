@@ -1,23 +1,22 @@
+import React, { memo } from 'react';
+import { Tags } from '../components/Tags';
+import '../../styles/global.css';
+import '../../styles/blog.css';
 
-import React from 'react';
-import '../styles/global.css';
-import '../styles/blog.css';
-
-const Blog = () => {
-    console.log("Blog component loaded");
-    // alert("Blog component loaded");
-
+// Usamos memo para evitar rerenders innecesarios
+const Blog = memo(() => {
     return (
         <div className="blog">
             <div className='blog-header'>
                 <h1>Javier's - Blog</h1>
-                <p> Optimización web</p>
+                <h2>Welcome to my blog! Here, I share my thoughts, experiences, and insights on various topics. Stay tuned for updates!</h2>
+                <Tags />
             </div>
             <div className='blog-content'>
-
+                {/* Aquí puedes agregar el contenido del blog */}
             </div>
         </div>
     );
-}
+});
 
 export default Blog;

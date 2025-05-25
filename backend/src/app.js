@@ -1,12 +1,14 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
+import compression from "compression";
 import morgan from "morgan";
 // const route = require("./route/index.js");
 
 const server = express();
 // server.name = "backend";
 
+server.use(compression());
 server.use(bodyParser.urlencoded({ extended:true, limit:"50mb" }));
 server.use(bodyParser.json({ limit: "50mb"}));
 server.use(cookieParser());
