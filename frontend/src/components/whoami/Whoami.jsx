@@ -32,9 +32,9 @@ export default function Whoami() {
         <div className="whoami-item whoami-text">
           <div className="whoami-quihubole"><span className="imperial-red" style={{ filter: 'drop-shadow(0 0 8px rgba(255, 59, 48, 0.8))' }} ><BsChevronRight /></span>Bienvenido a mi mundo!</div>
           <div className="whoami-main-text-title">
-            <h1 className="mt-2 pt-4">
+            <h2 className="mt-2 pt-4">
               <span className="white">Quiubo...</span>
-            </h1>
+            </h2>
           </div>
           <div className="whoami-main-text-title">
             <h1 className="pt-3">
