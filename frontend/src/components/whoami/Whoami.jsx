@@ -54,10 +54,10 @@ export default function Whoami() {
           </div>
           <div className="profile-cta">
             <button type="button" className="cta-button-work">
-              <Link to="work">Trabajemos juntos</Link>
+              <Link to="contact/work">Trabajemos juntos</Link>
             </button>
             <button type="button" className="cta-button-talk">
-              <Link to="project">Hablemos de tu proyecto</Link>
+              <Link to="contact/project">Hablemos de tu proyecto</Link>
             </button>
           </div>
         </div>

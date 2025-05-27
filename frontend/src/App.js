@@ -33,10 +33,10 @@ function App() {
             <Route path="projects" element={<Projects />} />{/** Ruta hijo */}
             <Route path="tech" element={<Technologies />} />
             <Route path="contact" element={<ContactApproach />} />
-            <Route path="contact/work" element={<ContactMessage work />} />
-            <Route path="contact/project" element={<ContactMessage project />} />
             {/* <Route path="about" element={<About />} /> */}
           </Route>
+          <Route path="contact/work" element={<ContactMessage work/>} />
+          <Route path="contact/project" element={<ContactMessage project />} />
           <Route path="/blog" element={<Blog />} />
           {/* <Route path="/blog/:id" element={<PostDetail />} /> */}
           {/* <Route path="/insights" element={<Insights />} /> */}

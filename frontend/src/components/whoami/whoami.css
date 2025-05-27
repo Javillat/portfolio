@@ -148,12 +148,29 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     font-family: var(--text-font);
     font-size: .875rem;
+    overflow: hidden;
+    animation: forwards 1.5s fadeIn ease-in-out 0s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
 }
 
 .whoami-main-text-title h1 {
     margin: 0 auto;
     letter-spacing: -.06em;
     padding-left: 50px;
+    overflow: hidden;
+    animation: forwards 1.5s fadeIn ease-in-out 0.2s;
 }
 
 .whoami-main-text-title h1 span {
@@ -167,16 +184,20 @@
     background: linear-gradient(90deg, var(--moonstone), var(--secundary-mint-neon), var(--electric-blue));
     background-size: 200% auto;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-shift 4s linear infinite;
+    overflow: hidden;
+    animation: gradient-shift 4s linear infinite, fadeIn 1.5s ease-in-out forwards 0.3s;
 }
 
 .color-shift-reverse {
     background: linear-gradient(90deg, var(--electric-blue), var(--moonstone), var(--secundary-mint-neon));
     background-size: 200% auto;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-shift 6s linear infinite;
+    overflow: hidden;
+    animation: gradient-shift 6s linear infinite, fadeIn 1.5s ease-in-out forwards 0.4s;
 }
 
 @keyframes gradient-shift {
@@ -227,8 +248,6 @@
     width: 60%;
     height: 65px;
     border-radius: 16px;
-
-
     background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -328,7 +347,7 @@
     display: contents;
     overflow: hidden;
     animation:
-        3.5s image-appear 6.7s steps(27, end);
+        0.2s image-appear 2.7s steps(27, end);
     transition: .5s ease-in;
 }
 
