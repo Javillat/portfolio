@@ -1,8 +1,6 @@
-
-import Posts from '../models/Post.js';
 import sequelize from '../dbpool.js'; 
 
-// const Posts = sequelize.models.Posts; 
+const Posts = sequelize.models.Posts; 
 // This file defines the controller for handling blog post-related requests.
 const getPosts = async (req, res) => {
     console.log(Posts);
