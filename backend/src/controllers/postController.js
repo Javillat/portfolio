@@ -11,7 +11,7 @@ const getPosts = async (req, res) => {
             where: {
                 status: 'published'
             },
-            attributes: ['title', 'content', 'slug', 'image_url', 'excerpt'],
+            attributes: ['title', 'slug', 'image_url', 'excerpt', 'author_id', 'views', 'createdAt'],
             order: [['createdAt', 'DESC']],
             limit: 10,
         })
