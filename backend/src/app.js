@@ -3,7 +3,7 @@ import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import compression from "compression";
 import morgan from "morgan";
-// const route = require("./route/index.js");
+import routerMain from "./routes/index.js";
 
 const server = express();
 // server.name = "backend";
@@ -25,7 +25,7 @@ server.use((request, response, next) => {
     return next();
 });
 
-// server.use("/", route);
+server.use("/", routerMain);
 server.use((err, request, response, next) => {
     const status = err.status || 500;
     const message = err.message || err;
