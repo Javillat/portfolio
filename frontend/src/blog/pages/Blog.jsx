@@ -1,29 +1,23 @@
-import React, { memo, useState } from 'react';
+import React, { memo } from 'react';
 import PostList from '../components/PostList';
 import { Tags } from '../components/Tags';
 import { useFetch } from '../hooks/useFetch';
 import '../../styles/global.css';
 import '../../styles/blog.css';
 
-
 const API_URL = process.env.REACT_APP_API_POST_URL || 'http://localhost:3001/api/v1/blog/posts';
 
-// Usamos memo para evitar rerenders innecesarios
 const Blog = memo(() => {
-    const [posts, setPosts] = useState([]);
+    const { data, loading, error } = useFetch(API_URL);
 
-    const { data: getPosts, error } = useFetch(API_URL);
-
-    React.useEffect(() => {
-        if (Array.isArray(getPosts) && getPosts.length > 0) {
-            setPosts(getPosts);
-        }
-    }, [getPosts]);
-
+    if (loading) return <div>Cargando posts...</div>;
     if (error) {
         console.error('Error fetching posts:', error);
         return <div>Error loading posts.</div>;
     }
+
+    // Si data no es un array, muestra vacío
+    const posts = Array.isArray(data) ? data : [];
 
     return (
         <div className="blog">

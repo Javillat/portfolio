@@ -1,11 +1,11 @@
-import sequelize from '../dbpool.js'; 
+import sequelize from '../dbpool.js';
 
-const Posts = sequelize.models.Posts; 
+const Posts = sequelize.models.Posts;
 // This file defines the controller for handling blog post-related requests.
 const getPosts = async (req, res) => {
-    console.log(Posts);
-    
-    console.log('Fetching latest 10 posts'); 
+    console.log('Modelo:', Posts);
+
+    console.log('Fetching latest 10 posts');
     try {
         const posts = await Posts.findAll({
             where: {
@@ -29,9 +29,9 @@ const getPosts = async (req, res) => {
 const getPostById = async (req, res) => {
     const { id } = req.params;
     try {
-        const post = await Post.findById(id)
+        const post = await Posts.findById(id)
             .populate('title content slug image_url excerpt')
-            
+
         if (!post) {
             return res.status(404).json({ error: 'Post not found' });
         }
@@ -42,7 +42,45 @@ const getPostById = async (req, res) => {
     }
 }
 
+const createPost = async (req, res) => {
+    
+    const { title, content, slug, image_url, excerpt, author_id, views, status, is_featured } = req.body;
+    if (!title || !content || !slug || !image_url || !excerpt || !author_id) {
+        return res.status(400).json({ error: 'All fields are required' });
+    }
+    console.log('Creating a new post:', { title, content, slug, image_url, excerpt, author_id });
+    // Validate the slug to ensure it is unique
+    const existingPost = await Posts.findOne({ where: { slug } });
+    if (existingPost) {
+        return res.status(400).json({ error: 'Slug must be unique' });
+    }
+
+    const newPost = {
+        title,
+        content,
+        slug,
+        image_url,
+        excerpt,
+        author_id,
+        views: views || 0,
+        status: status || 'draft',
+        is_featured: is_featured || false
+    };
+
+    console.log('Creating post in the database');
+
+    try {
+        const createPost = await Posts.create(newPost);
+        res.status(201).json(createPost);
+    }
+    catch (error) {
+        console.error('Error creating post:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+}
+
 export default {
     getPosts,
-    getPostById
+    getPostById,
+    createPost
 };

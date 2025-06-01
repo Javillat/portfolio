@@ -1,4 +1,3 @@
-
 export default (sequelize, DataTypes) => {
     const User = sequelize.define('User', {
         id: {
@@ -41,8 +40,8 @@ export default (sequelize, DataTypes) => {
     });
 
     User.associate = (models) => {
-        User.hasMany(models.Posts, { foreignKey: 'userId' });
+        User.hasMany(models.Posts, { foreignKey: 'author_id', as: 'posts' });
     };
 
     return User;
-}
+};

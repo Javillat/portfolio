@@ -13,7 +13,7 @@ const PostCard = ({ post }) => {
                         className="post-image"
                         onError={(e) => {
                             e.target.onerror = null; // Prevents infinite loop
-                            e.target.src = "https://via.placeholder.com/150"; // Fallback image
+                            e.target.src = "https://placehold.co/50x40"; // Fallback image
                         }}
                         loading="lazy"
                     />
@@ -45,3 +45,4 @@ const PostCard = ({ post }) => {
 
 export default PostCard;
 // This component is used to display a single post card in the blog section.
+

@@ -1,6 +1,6 @@
 
 export default (sequelize, DataTypes) => {
-    const Comment = sequelize.define('Comments', {
+    const Comments = sequelize.define('Comments', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -29,11 +29,11 @@ export default (sequelize, DataTypes) => {
     }, {
         freezeTableName: true,
     });
-    Comment.associate = (models) => {
-        Comment.belongsTo(models.Posts, { foreignKey: 'post_id' });
-        Comment.belongsTo(models.User, { foreignKey: 'user_id' });
-        Comment.belongsTo(Comment, { foreignKey: 'parent_id', as: 'parentComment' });
-        Comment.hasMany(Comment, { foreignKey: 'parent_id', as: 'replies' });
-    };
-    return Comment;
+    Comments.associate = (models) => {
+        Comments.belongsTo(models.Posts, { foreignKey: 'post_id', as: 'post' });
+        Comments.belongsTo(models.User, { foreignKey: 'user_id' });
+    //     Comment.belongsTo(Comments, { foreignKey: 'parent_id', as: 'parentComment' });
+    //     Comment.hasMany(Comments, { foreignKey: 'parent_id', as: 'replies' });
+     };
+    return Comments;
 };

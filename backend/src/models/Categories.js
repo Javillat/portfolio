@@ -1,6 +1,6 @@
 
 export default (sequelize, DataTypes) => {
-    const Category = sequelize.define('Categories', {
+    const Categories = sequelize.define('Categories', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -23,8 +23,8 @@ export default (sequelize, DataTypes) => {
     }, {
         freezeTableName: true,
     });
-    Category.associate = (models) => {
-        Category.hasMany(models.Posts, { foreignKey: 'categoryId' });
+    Categories.associate = (models) => {
+        Categories.hasMany(models.Posts, { foreignKey: 'categoryId', as: 'posts' });
     };
-    return Category;
+    return Categories;
 };

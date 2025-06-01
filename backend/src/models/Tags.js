@@ -1,4 +1,3 @@
-
 export default (sequelize, DataTypes) => {
     const Tags = sequelize.define('Tags', {
         id: {
@@ -19,6 +18,10 @@ export default (sequelize, DataTypes) => {
     }, {
         freezeTableName: true,
     });
+
+    Tags.associate = (models) => {
+        Tags.belongsToMany(models.Posts, { through: 'PostTags', foreignKey: 'tag_id', otherKey: 'post_id', as: 'posts' });
+    };
 
     return Tags;
 };
