@@ -1,24 +1,28 @@
 
 export default (sequelize, DataTypes) => {
-    const PostCategory = sequelize.define('PostCategory', {
+    const PostCategories = sequelize.define('PostCategories', {
         post_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
+            references: {
+                model: 'Posts',
+                key: 'id',
+            },
         },
         category_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
+            references: {
+                model: 'Categories',
+                key: 'id',
+            },
         },
     }, {
         freezeTableName: true,
+        timestamps: false,
     });
 
-    PostCategory.associate = (models) => {
-        PostCategory.belongsTo(models.Posts, { foreignKey: 'post_id' });
-        PostCategory.belongsTo(models.Categories, { foreignKey: 'category_id' });
-    };
-
-    return PostCategory;
+    return PostCategories;
 }

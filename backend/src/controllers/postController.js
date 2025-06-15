@@ -1,6 +1,7 @@
 import sequelize from '../dbpool.js';
 
 const Posts = sequelize.models.Posts;
+const Categories = sequelize.models.Categories;
 // This file defines the controller for handling blog post-related requests.
 const getPosts = async (req, res) => {
     console.log('Modelo:', Posts);
@@ -30,7 +31,6 @@ const getPostById = async (req, res) => {
     const { id } = req.params;
     try {
         const post = await Posts.findById(id)
-            .populate('title content slug image_url excerpt')
 
         if (!post) {
             return res.status(404).json({ error: 'Post not found' });
@@ -79,8 +79,39 @@ const createPost = async (req, res) => {
     }
 }
 
+const getPostByCategory = async (req, res) => {
+    const { category } = req.params;
+    try {
+        const posts = await Posts.findAll({
+            include: [
+                {
+                    model: Categories,
+                    as: 'category',
+                    where:{ id: category },
+                    attributes: [],
+                    through: { attributes: [] }
+                }
+            ],
+            where: {
+                status: 'published'
+            },
+            attributes: ['title', 'slug', 'image_url', 'excerpt', 'author_id', 'views', 'createdAt'],
+            order: [['createdAt', 'DESC']],
+        });
+
+        if (!posts || posts.length === 0) {
+            return res.status(404).json({ error: 'No posts found for this category' });
+        }
+        res.status(200).json(posts);
+    } catch (error) {
+        console.error('Error fetching posts by category:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+}
+
 export default {
     getPosts,
     getPostById,
+    getPostByCategory,
     createPost
 };

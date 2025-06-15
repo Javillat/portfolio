@@ -42,19 +42,37 @@ export default (sequelize, DataTypes) => {
             type: DataTypes.BOOLEAN,
             defaultValue: false,
         },
-        categoryId: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        }
     }, {
         freezeTableName: true,
     });
 
     Post.associate = (models) => {
-        Post.belongsTo(models.User, { foreignKey: 'author_id', as: 'author' });
-        Post.belongsToMany(models.Tags, { through: 'PostTags', foreignKey: 'post_id', otherKey: 'tag_id', as: 'tags' });
-        Post.belongsTo(models.Categories, { foreignKey: 'categoryId', as: 'category' });
-        Post.hasMany(models.Comments, { foreignKey: 'post_id', as: 'comments' });
+        Post.belongsTo(models.User,
+            {
+                foreignKey: 'author_id',
+                as: 'author'
+            }
+        );
+        Post.belongsToMany(models.Tags,
+            {
+                through: 'PostTags',
+                foreignKey: 'post_id',
+                as: 'tags'
+            }
+        );
+        Post.belongsToMany(models.Categories,
+            {
+                through: 'PostCategories',
+                foreignKey: 'post_id',
+                otherKey: 'category_id',
+                as: 'categories'
+            });
+        Post.hasMany(models.Comments,
+            {
+                foreignKey: 'post_id',
+                as: 'comments'
+            }
+        );
     };
 
     return Post;

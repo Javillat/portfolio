@@ -24,7 +24,13 @@ export default (sequelize, DataTypes) => {
         freezeTableName: true,
     });
     Categories.associate = (models) => {
-        Categories.hasMany(models.Posts, { foreignKey: 'categoryId', as: 'posts' });
+        Categories.belongsToMany(models.Posts,
+            {
+                through: 'PostCategories',
+                foreignKey: 'category_id',
+                otherKey: 'post_id',
+                as: 'posts'
+            });
     };
     return Categories;
 };

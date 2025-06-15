@@ -16,7 +16,6 @@ const Blog = memo(() => {
         return <div>Error loading posts.</div>;
     }
 
-    // Si data no es un array, muestra vacío
     const posts = Array.isArray(data) ? data : [];
 
     return (
